@@ -22,4 +22,31 @@
   <!--<meta name="twitter:image:src" content="/eventual/path/to/logo">-->
   <meta name="twitter:description" content="Chris Gibbons - Front end, coffee &amp; cakes">
 
+  <!-- Webfont loading code from Google -->
+  <script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Playfair+Display:400,700,400italic', 'Muli:400,400italic' ] }
+  };
+    (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+    '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })();
+
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-31834421-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  </script>
 </head>

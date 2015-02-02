@@ -1,0 +1,15 @@
+# Site settings
+title: est1981.co.uk
+email: chris@est1981.co.uk
+description: Chris Gibbons // point12 - Front End Web Developer
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://est1981.co.uk" # the base hostname & protocol for your site
+twitter_username: jibubo
+github_username:  point12
+linkedin_username: cdgibbons
+lastfm_username: jibubo
+flickr_username: jibubo
+instagram_username: jibubo
+
+# Build settings
+markdown: kramdown

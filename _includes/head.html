@@ -1,0 +1,25 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+	<meta content="Chris Gibbons, chris gibbons, point12, chris, gibbons, blackpool, lancashire, lancs, england, uk, united kingdom, web designer, web design, html, css, xhtml, php, web standards, accessibility, javascript, jquery, cv, portfolio" name="Keywords" />
+	<meta content="Chris Gibbons" name="author" />
+	<meta content="Chris Gibbons" name="copyright" />
+
+  <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic|Muli:400,400italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@jibubo">
+  <meta name="twitter:domain" content="chrisgibbons.co.uk">
+  <meta name="twitter:creator" content="@jibubo">
+  <meta name="twitter:title" content="Front end, coffee &amp; cakes">
+  <!--<meta name="twitter:image:src" content="/eventual/path/to/logo">-->
+  <meta name="twitter:description" content="Chris Gibbons - Front end, coffee &amp; cakes">
+
+</head>

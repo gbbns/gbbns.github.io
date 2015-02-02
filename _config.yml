@@ -13,3 +13,5 @@ instagram_username: jibubo
 
 # Build settings
 markdown: kramdown
+
+permalink: /:year/:month/:title

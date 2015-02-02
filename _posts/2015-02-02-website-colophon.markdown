@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Colophom"
+title:  "Colophon"
 date:   2015-02-02 11:38:02
 categories: colophon update hello
 ---

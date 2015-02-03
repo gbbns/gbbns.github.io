@@ -6,7 +6,7 @@ permalink: /about/
 
 Hi.
 
-I'm an experienced digital developer specialising in front-end development, UX and mobile, with a passion/mild obsession for well written &amp; clean code. I enjoy the challenge of using & learning new and emerging technologies to better projects, as well as delivering cross device, compliant, usable websites.
+I&rsquo;m an experienced digital developer specialising in front-end development, UX and mobile, with a passion/mild obsession for well written &amp; clean code. I enjoy the challenge of using &amp; learning new and emerging technologies to better projects, as well as delivering cross device, compliant, usable websites.
 
 Keen to gain greater understanding of User Experience to ensure the best solutions are always being delivered.
 

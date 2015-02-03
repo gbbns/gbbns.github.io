@@ -14,9 +14,9 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-    font-family: $base-font-family;
-    font-size: $base-font-size;
-    line-height: $base-line-height;
+    font: $base-font-size $base-font-family;
+    /*max-width: 540px;*/
+    margin: 0 0 12px 0px;
     font-weight: 300;
     color: $text-color;
     background-color: $background-color;
@@ -35,7 +35,12 @@ ul, ol, dl, figure,
     margin-bottom: $spacing-unit / 2;
 }
 
-
+h1, h2, h3, h4, h5, h6 {
+  font: 70px/68px  $base-header-font-family;
+  color: $text-color;
+  text-transform: uppercase;
+  margin: 0 0 10px 0px;
+}
 
 /**
  * Images

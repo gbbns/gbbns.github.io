@@ -4,14 +4,11 @@ title: Work
 permalink: /work/
 ---
 
-**Work**
+##Clients
 
-Hillarys, Blinds Supermarket, Hull Trains, TPE, Bettaliving, Aldermore are among the most recent clients I've worked with.
+Hillarys, Blinds Supermarket, Hull Trains, TPE, Bettaliving, Aldermore are among the most recent clients I&rsquo;ve worked with.
 
-**Hillarys**
+##Projects
 
-Worked on all aspects the Hillarys family of sites.
 
-**A/B Testing**
-
-Most of the clients within my team have had 
+##A/B Testing

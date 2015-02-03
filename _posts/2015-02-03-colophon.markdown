@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Colophon"
-permalink: /:title
 ---
 This site is built by myself using [Atom](http://atom.io) and generated with the amazing [Jekyll](http://jekyllrb.com/) and hosted on [GitHub Pages](http://pages.github.com).
 

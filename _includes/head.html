@@ -5,14 +5,9 @@
 
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-	<meta content="Chris Gibbons, chris gibbons, point12, chris, gibbons, blackpool, lancashire, lancs, england, uk, united kingdom, web designer, web design, html, css, xhtml, php, web standards, accessibility, javascript, jquery, cv, portfolio" name="Keywords" />
-	<meta content="Chris Gibbons" name="author" />
-	<meta content="Chris Gibbons" name="copyright" />
-
-  <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic|Muli:400,400italic' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+  <meta content="Chris Gibbons, chris gibbons, point12, chris, gibbons, blackpool, lancashire, lancs, england, uk, united kingdom, web designer, web design, html, css, xhtml, php, web standards, accessibility, javascript, jquery, cv, portfolio" name="Keywords" />
+  <meta content="Chris Gibbons" name="author" />
+  <meta content="Chris Gibbons" name="copyright" />
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@jibubo">
@@ -21,6 +16,10 @@
   <meta name="twitter:title" content="Front end, coffee &amp; cakes">
   <!--<meta name="twitter:image:src" content="/eventual/path/to/logo">-->
   <meta name="twitter:description" content="Chris Gibbons - Front end, coffee &amp; cakes">
+
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 
   <!-- Webfont loading code from Google -->
   <script type="text/javascript">
@@ -36,7 +35,6 @@
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(wf, s);
   })();
-
 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-31834421-1']);

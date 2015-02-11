@@ -3,12 +3,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width initial-scale=1">
 
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-  <meta content="Chris Gibbons, chris gibbons, point12, chris, gibbons, blackpool, lancashire, lancs, england, uk, united kingdom, web designer, web design, html, css, xhtml, php, web standards, accessibility, javascript, jquery, cv, portfolio" name="Keywords" />
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.meta.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.meta.description }}{% endif %}">
+  <meta content="{{ site.meta.keywords }}" name="Keywords" />
   <meta content="Chris Gibbons" name="author" />
   <meta content="Chris Gibbons" name="copyright" />
 
+  <!-- Twitter card -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@jibubo">
   <meta name="twitter:domain" content="chrisgibbons.co.uk">
@@ -23,9 +24,9 @@
 
   <!-- Webfont loading code from Google -->
   <script type="text/javascript">
-  WebFontConfig = {
-    google: { families: [ 'Playfair+Display:400,700,400italic', 'Muli:400,400italic' ] }
-  };
+    WebFontConfig = {
+      google: { families: [ 'Merriweather:400,300,700,400italic:latin', 'Oswald:400,700:latin' ] }
+    };
     (function() {
     var wf = document.createElement('script');
     wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +

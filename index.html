@@ -3,21 +3,12 @@ layout: default
 ---
 
 <div class="home">
+  <h1>Hello, I&rsquo;m <abbr title="{{ site.meta.description }}">Chris</abbr>.</h1>
 
-  <h1 class="page-heading">Posts</h1>
+  <p>I&rsquo;m currently a <a href="/work">senior front end web developer</a> for <a href="http://www.codecomputerlove.com">Code Computerlove</a> in Manchester.</p>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <p>I live close to the seaside resort of <a href="http://en.wikipedia.org/wiki/Blackpool">Blackpool</a></p>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <p>I also like to <a href="http://jibubo.vsco.co">take</a> <a href="http://instagram.com/{{ site.social-link.instagram }}">photographs</a>, bake and support Liverpool FC</p>
 
 </div>

@@ -14,12 +14,13 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-    font: $base-font-size $base-font-family;
+    font: $base-font-size;
+    font-family:$base-font-family;
     /*max-width: 540px;*/
     margin: 0 0 12px 0px;
-    font-weight: 300;
-    color: $text-color;
-    background-color: $background-color;
+    font-weight: 400;
+    color: $C-primary-text;
+    background-color: $C-background;
     -webkit-text-size-adjust: 100%;
 }
 
@@ -36,10 +37,14 @@ ul, ol, dl, figure,
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font: 70px/68px  $base-header-font-family;
-  color: $text-color;
+  font-size: 50px;
+  line-height: 1;
+  font-family:  $base-header-font-family;
+  color: $C-primary-text;
+  margin:0px 0 20px -2px;
+  font-weight: 400;
   text-transform: uppercase;
-  margin: 0 0 10px 0px;
+  text-rendering: optimizeLegibility;
 }
 
 /**
@@ -85,7 +90,7 @@ li {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
+    font-weight: 400;
 }
 
 
@@ -94,15 +99,15 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: $brand-color;
+    color: $C-brand;
     text-decoration: none;
 
     &:visited {
-        color: darken($brand-color, 15%);
+        color: darken($C-brand, 15%);
     }
 
     &:hover {
-        color: $text-color;
+        color: $C-primary-text;
         text-decoration: underline;
     }
 }

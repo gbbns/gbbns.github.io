@@ -1,4 +1,34 @@
-// Our variables
+/* ==========================================================================
+   Global variables
+
+   chrisgibbons.co.uk
+   ========================================================================== */
+
+/*
+   Colours
+   ========================================================================== */
+
+$c-brand-blue:#046380;
+$c-brand-green:#002F2F;
+$c-brand-sand--light:#EFECCA;
+$c-brand-sand--normal:#E6E2AF;
+$c-brand-sand--dark:#A7A37E;
+
+$c-text--primary:#193441;
+
+$c-background--primary:#FCFFF5 ;
+
+$c-brand:      #2a7ae2;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+
+/*
+   Fonts
+   ========================================================================== */
+
 $base-font-family: 'Merriweather', serif;
 $base-header-font-family: 'Oswald', sans-serif;
 $base-font-size:   16px;
@@ -7,13 +37,8 @@ $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$C-primary-text:       #111;
-$C-background: #fdfdfd;
-$C-brand:      #2a7ae2;
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+
 
 // Width of the content area
 $content-width:    800px;

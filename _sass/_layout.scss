@@ -32,12 +32,16 @@
     }
 
     .page-link {
-        color: $C-primary-text;
+        color: $c-text--primary;
         line-height: $base-line-height;
 
         // Gaps between nav items, but not on the first one
         &:not(:first-child) {
             margin-left: 20px;
+        }
+
+        &:hover {
+          color:#3E606F;
         }
     }
 
@@ -45,7 +49,7 @@
         position: absolute;
         top: 9px;
         right: 30px;
-        background-color: $C-background;
+        background-color: $c-background--primary;
         border: 1px solid $grey-color-light;
         border-radius: 5px;
         text-align: right;

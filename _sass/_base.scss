@@ -19,8 +19,8 @@ body {
     /*max-width: 540px;*/
     margin: 0 0 12px 0px;
     font-weight: 400;
-    color: $C-primary-text;
-    background-color: $C-background;
+    color: $c-text--primary;
+    background-color: $c-background--primary;
     -webkit-text-size-adjust: 100%;
 }
 
@@ -40,7 +40,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 50px;
   line-height: 1;
   font-family:  $base-header-font-family;
-  color: $C-primary-text;
+  color: $c-text--primary;
   margin:0px 0 20px -2px;
   font-weight: 400;
   text-transform: uppercase;
@@ -99,15 +99,15 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: $C-brand;
+    color: $c-brand;
     text-decoration: none;
 
     &:visited {
-        color: darken($C-brand, 15%);
+        color: darken($c-brand, 15%);
     }
 
     &:hover {
-        color: $C-primary-text;
+        color: $c-text--primary;
         text-decoration: underline;
     }
 }

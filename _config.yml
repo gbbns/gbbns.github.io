@@ -5,10 +5,10 @@ main:
   description: Chris Gibbons // point12 - Front End Web Developer
 
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://chrisgibbons.co.uk" # the base hostname & protocol for your site
+url: "http://www.chrisgibbons.co.uk" # the base hostname & protocol for your site
 
 meta:
-  description: "Chris Gibbons, a senior front end &amp; freelance developer based in Blackpool, Lancashire &amp; Manchester, UK. I build flexible responsive websites for the web. Please get in touch for more information!"
+  description: "Chris Gibbons, a senior front end &amp; freelance developer based in Blackpool, Lancashire &amp; Manchester, UK. I build flexible responsive websites for the web. Feel free to get in contact for a chat!"
   title: "Freelance front end web developer -- Manchester - Lancashire -- Chris Gibbons"
   keywords: "Chris Gibbons, chris gibbons, point12, blackpool, lancashire,england, uk, united kingdom, html, css, xhtml, web standards, accessibility, javascript"
 

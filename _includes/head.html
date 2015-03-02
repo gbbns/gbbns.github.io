@@ -9,14 +9,21 @@
   <meta content="Chris Gibbons" name="author" />
   <meta content="Chris Gibbons" name="copyright" />
 
+  <!-- Facebook Open Graph -->
+  <meta property="og:title" content="Home">
+  <meta property="og:url" content="http://www.chrisgibbons.co.uk/">
+  <meta property="og:description" content="{{ site.meta.description }}">
+  <!--<meta property="og:image" content="/eventual/path/to/logo">-->
+  <meta property="og:site_name" content="Chris Gibbons">
+
   <!-- Twitter card -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@jibubo">
-  <meta name="twitter:domain" content="chrisgibbons.co.uk">
+  <meta name="twitter:domain" content="www.chrisgibbons.co.uk">
   <meta name="twitter:creator" content="@jibubo">
   <meta name="twitter:title" content="Front end, coffee &amp; cakes">
   <!--<meta name="twitter:image:src" content="/eventual/path/to/logo">-->
-  <meta name="twitter:description" content="Chris Gibbons - Front end, coffee &amp; cakes">
+  <meta name="twitter:description" content="{{ site.meta.description }}">
 
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">

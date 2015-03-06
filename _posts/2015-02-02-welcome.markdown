@@ -4,11 +4,11 @@ title:  "Welcome!!"
 date:   2015-02-02 11:38:02
 categories: jekyll update hello
 ---
-So, here we are!
+So, after countless promises over the past few years, here we are!
 
-I&rsquo;ve finally got round to sorting my new site, it&rsquo;s now running on [Jekyll](http://jekyllrb.com) and is an absolute breeze to keep up to date.
+I&rsquo;ve finally got round to sorting out my new site, it&rsquo;s now running on [Jekyll](http://jekyllrb.com) and is an absolute breeze to keep up to date.
 
-Hopefully as time progresses I&rsquo;ll get round to adding a little more colour, as well as more blog posts as I have plenty planned...
+Hopefully as time progresses I&rsquo;ll get round to adding a little more colour, as well as more blog posts - as I have plenty planned...
 
 In the mean time, check out my other channels:
 

@@ -2,10 +2,10 @@
 layout: post
 title:  "Colophon"
 ---
-This site is built by myself using [Atom](http://atom.io) and generated with the amazing [Jekyll](http://jekyllrb.com/) and hosted on [GitHub Pages](http://pages.github.com).
+This site is built using [Atom](http://atom.io) and generated with the amazing [Jekyll](http://jekyllrb.com/) and hosted on [GitHub Pages](http://pages.github.com).
 
 The theme, for the minute, is based on the default template installed by Jekyll, so any similarities to any other sites is purely accidental.
 
-Font&rsquo;s are served from [Google Fonts](https://www.google.com/fonts)
+Font&rsquo;s are served from [Google Fonts](https://www.google.com/fonts).
 
-I will add more content here, I promise.
+Next I think I&rsquo;m going to add [Disqus](https://disqus.com/) comments to the blog posts, as well as more social integration.

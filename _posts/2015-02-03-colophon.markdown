@@ -8,4 +8,4 @@ The theme, for the minute, is based on the default template installed by Jekyll,
 
 Font&rsquo;s are served from [Google Fonts](https://www.google.com/fonts).
 
-Next I think I&rsquo;m going to add [Disqus](https://disqus.com/) comments to the blog posts, as well as more social integration.
+Next <span class="strike">I think I&rsquo;m going to add [Disqus](https://disqus.com/) comments to the blog posts</span>, as well as more social integration.

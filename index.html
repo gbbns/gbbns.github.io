@@ -7,8 +7,19 @@ layout: default
 
   <p>I&rsquo;m currently a <a href="/work">senior front end web developer</a> for <a href="http://www.codecomputerlove.com">Code Computerlove</a> in Manchester.</p>
 
-  <p>I live close to the seaside resort of <a href="http://en.wikipedia.org/wiki/Blackpool">Blackpool</a></p>
+  <p>I live close to the seaside resort of <a href="http://en.wikipedia.org/wiki/Blackpool">Blackpool</a>.</p>
 
-  <p>I also like to <a href="http://jibubo.vsco.co">take</a> <a href="http://instagram.com/{{ site.social-link.instagram }}">photographs</a>, bake and support Liverpool FC</p>
+  <p>I also like to <a href="http://jibubo.vsco.co">take</a> <a href="http://instagram.com/{{ site.social-link.instagram }}">photographs</a>, bake and support Liverpool FC.</p>
 
+  <h2>Latest blog articles</h2>
+  <ul class="post-list">
+      {% for post in site.posts limit:3 %}
+        <li>
+          <span>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </span>
+          <div class="post-date">{{ post.date | date: "%b %-d, %Y" }}</div>
+        </li>
+      {% endfor %}
+    </ul>
 </div>

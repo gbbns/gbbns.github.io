@@ -3,18 +3,22 @@ layout: page
 title: Blog
 published: true
 ---
-<h1 class="page-heading">Posts</h1>
-
-<ul class="post-list">
+<div class="home">
   {% for post in site.posts %}
-    <li>
-      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
+  <article class="post">
+    <header class="post-header">
       <h2>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       </h2>
-    </li>
+      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }} on {{post.categories | join: ' '}}</span>
+    </header>
+    <section class="post-except">
+      <p>
+        {{ post.content | strip_html | truncatewords:50}}
+        <a class="continue-reading" href="{{ post.url | prepend: site.baseurl }}">Continue reading >></a>
+      </p>
+    </section>
+  </article>
   {% endfor %}
-</ul>
-
-<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+</div>

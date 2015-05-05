@@ -3,11 +3,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta id="viewport" name="viewport" content="width=device-width,initial-scale=1">
 
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.meta.title }}{% endif %}</title>
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.meta.title }}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.meta.description }}{% endif %}">
-  <meta content="{{ site.meta.keywords }}" name="Keywords" />
-  <meta content="Chris Gibbons" name="author" />
-  <meta content="Chris Gibbons" name="copyright" />
+  <meta name="keywords" content="{{ site.meta.keywords }}" />
+  <meta name="author" content="Chris Gibbons" />
+  <meta name="copyright" content="Chris Gibbons" />
 
   <!-- Facebook Open Graph -->
   <meta property="og:title" content="Home">
@@ -32,7 +32,7 @@
   <!-- Webfont loading code from Google -->
   <script type="text/javascript">
     WebFontConfig = {
-      google: { families: [ 'Merriweather:400,300,700,400italic:latin', 'Oswald:400,700:latin' ] }
+      google: { families: [ 'Montserrat:400,700', 'Lato:400,700,400italic,700italic' ] }
     };
     (function() {
     var wf = document.createElement('script');

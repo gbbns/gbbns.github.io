@@ -1,13 +1,19 @@
 <head>
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.meta.title }}</title>
+
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
   <meta id="viewport" name="viewport" content="width=device-width,initial-scale=1">
 
-  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.meta.title }}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.meta.description }}{% endif %}">
   <meta name="keywords" content="{{ site.meta.keywords }}" />
   <meta name="author" content="Chris Gibbons" />
   <meta name="copyright" content="Chris Gibbons" />
+
+  <!-- handheld support -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
 
   <!-- Facebook Open Graph -->
   <meta property="og:title" content="Home">

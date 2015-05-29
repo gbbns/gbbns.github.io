@@ -8,17 +8,17 @@ published: true
   <article class="post">
     <header class="post__header">
       <h2 class="site__title--secondary">
-        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        <a href="{{ post.url}}">{{ post.title }}</a>
       </h2>
-      <span class="post__meta">{{ post.date | date: "%b %-d, %Y" }} on {{post.categories | join: ' '}}</span>
+      <span class="post__meta">{{ post.date | date: "%b %-d, %Y" }}</span>
     </header>
     <section class="post__except">
       <p>
         {{ post.content | strip_html | truncatewords:50}}
-        <a class="continue-reading" href="{{ post.url | prepend: site.baseurl }}">Continue reading >></a>
+        <a class="continue-reading" href="{{ post.url}}">Continue reading >></a>
       </p>
     </section>
   </article>
   {% endfor %}
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" }}">via RSS</a></p>
 </div>

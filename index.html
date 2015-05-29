@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Home
 ---
 
 <section class="home">
@@ -15,7 +16,7 @@ layout: default
     <ul class="post__list">
       {% for post in site.posts limit:3 %}
         <li>
-          <a class="post__link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          <a class="post__link" href="{{ post.url }}">{{ post.title }}</a>
           <div class="post__date">{{ post.date | date: "%b %-d, %Y" }}</div>
         </li>
       {% endfor %}

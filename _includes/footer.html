@@ -1,21 +1,13 @@
-<footer class="site-footer">
-
-  <div class="wrapper">
-
+<div class="site-footer">
     <!--<h2 class="footer-heading">{{ site.title }}</h2>-->
 
     <div class="footer-col-wrapper">
-      <div class="footer-col  footer-col-1">
-        <ul class="contact-list">
           <!--<li>{{ site.title }}</li>-->
-          <li><a href="mailto:{{ site.main.email }}">{{ site.main.email }}</a></li>
-        </ul>
-      </div>
+        <p><a href="mailto:{{ site.main.email }}">{{ site.main.email }}</a></p>
 
-      <div class="footer-col  footer-col-2">
         <ul class="social-media-list">
           {% if site.social-link.github %}
-          <li>
+          <li class="social-item">
             <a href="https://github.com/{{ site.social-link.github }}">
               <i class="fa fa-github"></i>
               <span class="username">{{ site.social-link.github }}</span>
@@ -24,7 +16,7 @@
           {% endif %}
 
           {% if site.social-link.twitter %}
-          <li>
+          <li class="social-item">
             <a href="https://twitter.com/{{ site.social-link.twitter }}">
               <i class="fa fa-twitter"></i>
               <span class="username">{{ site.social-link.twitter }}</span>
@@ -33,8 +25,8 @@
           {% endif %}
 
           {% if site.social-link.linkedin %}
-          <li>
-            <a href="http://uk.linkedin.com/in/{{ site.social-link.github }}">
+          <li class="social-item">
+            <a href="http://uk.linkedin.com/in/{{ site.social-link.linkedin }}">
               <i class="fa fa-linkedin"></i>
               <span class="username">{{ site.social-link.linkedin }}</span>
             </a>
@@ -42,7 +34,7 @@
           {% endif %}
 
           {% if site.social-link.instagram %}
-          <li>
+          <li class="social-item">
             <a href="http://instagram.com/{{ site.social-link.instagram }}">
               <i class="fa fa-instagram"></i>
               <span class="username">{{ site.social-link.instagram }}</span>
@@ -50,17 +42,9 @@
           </li>
           {% endif %}
 
-
-
-
         </ul>
-      </div>
 
-      <div class="footer-col  footer-col-3">
-        <p class="text">{{ site.main.description }}</p>
-      </div>
+        <p class="text">&copy; {{ site.time | date: '%Y' }}. {{ site.main.description }} - All rights reserved.</p>
     </div>
 
-  </div>
-
-</footer>
+</div>

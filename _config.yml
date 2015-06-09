@@ -14,7 +14,7 @@ meta:
 
 sass:
   sass_dir: _sass
-  style: compact
+  style: compressed
 
 social-link:
   twitter: jibubo

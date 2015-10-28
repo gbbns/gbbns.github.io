@@ -1,0 +1,26 @@
+---
+layout: page
+title: Work
+permalink: /work/
+---
+<section class="home">
+ 	<article class="content__main clearfix">
+		<p>Over the years I&rsquo;ve been fortunate to work with brands including: <a href="http://www.hillarys.co.uk">Hillarys</a>, <a href="http://www.blinds-supermarket.co.uk">Blinds Supermarket</a>, <a href="http://www.tpexpress.co.uk">Transpennine Express</a>, <a href="http://www.hulltrains.co.uk">Hull Trains</a>, <a href="http://www.bettaliving.co.uk">BettaLiving</a>, <a href="http://www.bayercropscience.co.uk">Bayer Cropscience</a>, <a href="http://www.aldermore.co.uk">Aldermore</a>.</p>
+	</article>
+
+
+	<article class="post">
+		<header class="post__header">
+			<h2 class="site__title--secondary">
+				<a href="{{ post.url}}">{{ post.title }}</a>
+			</h2>
+			<span class="post__meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+		</header>
+		<section class="post__except">
+			<p>
+			{{ post.content | strip_html | truncatewords:50}}
+			<a class="continue-reading" href="{{ post.url}}">Continue reading >></a>
+			</p>
+		</section>
+	</article>
+</section>

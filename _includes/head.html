@@ -15,21 +15,16 @@
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
 
-  <!-- Facebook Open Graph -->
-  <meta property="og:title" content="Home">
-  <meta property="og:url" content="http://www.chrisgibbons.co.uk/">
-  <meta property="og:description" content="{{ site.meta.description }}">
-  <!--<meta property="og:image" content="/eventual/path/to/logo">-->
-  <meta property="og:site_name" content="Chris Gibbons">
-
-  <!-- Twitter card -->
+  <!-- Twitter card & Open Gragh -->
+  <metacontent="Home">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@jibubo">
-  <meta name="twitter:domain" content="www.chrisgibbons.co.uk">
+  <meta name="twitter:domain" property="og:url" content="www.chrisgibbons.co.uk">
   <meta name="twitter:creator" content="@jibubo">
-  <meta name="twitter:title" content="Front end, coffee &amp; cakes">
-  <!--<meta name="twitter:image:src" content="/eventual/path/to/logo">-->
-  <meta name="twitter:description" content="{{ site.meta.description }}">
+  <meta name="twitter:title" property="og:title" content="Front end, coffee &amp; cakes">
+  <!--<meta name="twitter:image:src" property="og:image" content="/eventual/path/to/logo">-->
+  <meta name="twitter:description" property="og:description" content="{{ site.meta.description }}">
+  <meta property="og:site_name" content="Chris Gibbons">
 
   <link rel="stylesheet" href="{{ "css/main.css" | prepend: site.baseurl }}">
 
@@ -39,7 +34,7 @@
   <!-- Webfont loading code from Google -->
   <script type="text/javascript">
     WebFontConfig = {
-      google: { families: [ 'Montserrat:400,700', 'Lato:400,700,400italic,700italic' ] }
+      google: { families: [ 'Vollkorn:400,400italic:latin', 'Raleway:700:latin' ] }
     };
     (function() {
     var wf = document.createElement('script');

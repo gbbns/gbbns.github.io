@@ -1,0 +1,23 @@
+.nav-primary__wrapper {
+
+}
+
+.nav-primary {
+
+  padding: 0;
+  margin: 0;
+
+  .nav-primary__item {
+    display: inline-block;
+    list-style: none;
+    margin-right: 10px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  .nav-primary__link {
+    display: block;
+  }
+}

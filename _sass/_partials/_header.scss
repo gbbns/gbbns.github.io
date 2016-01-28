@@ -2,8 +2,9 @@
  * Site header
  */
 .site__header {
-  border-top: 5px solid $grey-color-dark;
+  border-top: 1px solid $grey-color-dark;
   border-bottom: 1px solid $grey-color-light;
+  padding: 20px;
   position: relative;
 
   .site__title {
@@ -11,7 +12,6 @@
     line-height: 1.4;
     letter-spacing: -1px;
     margin-bottom: 0;
-    float: left;
 
     &,
     &:visited {

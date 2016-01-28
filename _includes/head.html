@@ -1,60 +1,59 @@
-<head>
-  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.meta.title }}</title>
+  <head>
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.meta.title }}</title>
 
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- General Meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-  <meta id="viewport" name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.meta.description }}{% endif %}">
-  <meta name="keywords" content="{{ site.meta.keywords }}" />
-  <meta name="author" content="Chris Gibbons" />
-  <meta name="copyright" content="Chris Gibbons" />
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.meta.description }}{% endif %}">
+    <meta name="keywords" content="{{ site.meta.keywords }}" />
+    <meta name="author" content="Chris Gibbons" />
+    <meta name="copyright" content="Chris Gibbons" />
 
-  <!-- handheld support -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
+    <!-- handheld support -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
 
-  <!-- Twitter card & Open Gragh -->
-  <metacontent="Home">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="@jibubo">
-  <meta name="twitter:domain" property="og:url" content="www.chrisgibbons.co.uk">
-  <meta name="twitter:creator" content="@jibubo">
-  <meta name="twitter:title" property="og:title" content="Front end, coffee &amp; cakes">
-  <!--<meta name="twitter:image:src" property="og:image" content="/eventual/path/to/logo">-->
-  <meta name="twitter:description" property="og:description" content="{{ site.meta.description }}">
-  <meta property="og:site_name" content="Chris Gibbons">
+    <!-- Twitter & Open Gragh -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@jibubo">
+    <meta name="twitter:domain" property="og:url" content="www.chrisgibbons.co.uk">
+    <meta name="twitter:creator" content="@jibubo">
+    <meta name="twitter:title" property="og:title" content="Front end, coffee &amp; cakes">
+    <!--<meta name="twitter:image:src" property="og:image" content="/eventual/path/to/logo">-->
+    <meta name="twitter:description" property="og:description" content="{{ site.meta.description }}">
+    <meta property="og:site_name" content="Chris Gibbons">
 
-  <link rel="stylesheet" href="{{ "css/main.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "css/main.css" | prepend: site.baseurl }}">
 
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ "feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ "feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 
-  <!-- Webfont loading code from Google -->
-  <script type="text/javascript">
-    WebFontConfig = {
-      google: { families: [ 'Vollkorn:400,400italic:latin', 'Raleway:700:latin' ] }
-    };
-    (function() {
-    var wf = document.createElement('script');
-    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-    '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-    wf.type = 'text/javascript';
-    wf.async = 'true';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(wf, s);
-  })();
+    <!-- Webfont loading code from Google -->
+    <script type="text/javascript">
+      WebFontConfig = {
+        google: { families: [ 'Vollkorn:400,400italic:latin', 'Raleway:700:latin' ] }
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+        '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-31834421-1']);
-  _gaq.push(['_trackPageview']);
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-31834421-1']);
+      _gaq.push(['_trackPageview']);
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-  </script>
-</head>
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </head>

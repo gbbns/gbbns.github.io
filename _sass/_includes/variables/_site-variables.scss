@@ -9,6 +9,7 @@
    ========================================================================== */
 
 $c-brand-blue:          #046380;
+$c-brand-blue--light:   #6a9fb5;
 $c-brand-green:         #002F2F;
 $c-brand-sand--light:   #EFECCA;
 $c-brand-sand--normal:  #E6E2AF;
@@ -16,7 +17,7 @@ $c-brand-sand--dark:    #A7A37E;
 
 $c-text--primary:       #193441;
 
-$c-background--primary: #FCFFF5 ;
+$c-background--primary: #FCFFF5;
 
 $c-brand:               #2a7ae2;
 
@@ -43,22 +44,7 @@ $rhythm-unit:             'rem' !default;
 
 
 // Width of the content area
-$content-width:           800px;
-
+$d-wrapper-width:        90%;
+$d-content-width:        800px;
 $on-palm:                 600px;
 $on-laptop:               800px;
-
-
-
-// Using media queries with like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
-}

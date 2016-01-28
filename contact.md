@@ -2,6 +2,7 @@
 layout: page
 title: Contact
 permalink: /contact/
+menu: main
 ---
 
 Please drop me an email to: me {at} chrisgibbons {dot} co {dot} uk, I&rsquo;m also fairly active over on [Twitter](http://twitter.com/jibubo) so please fire me a Tweet.

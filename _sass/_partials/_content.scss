@@ -1,0 +1,41 @@
+.content {
+  .site__title {
+    &--primary {
+      font-size: 60px;
+    }
+    &--secondary {
+      font-size: 30px;
+    }
+  }
+
+  &__main {
+    margin-bottom:14px;
+  }
+
+  &__aside {
+    &--title {
+      font-size:26px;
+      font-weight:bold;
+      margin-bottom:8px;
+    }
+  }
+}
+
+/**
+ * Page content
+ */
+.page__content {
+  padding: $spacing-unit 0;
+
+  .page__heading {
+    font-size: 20px;
+  }
+
+  .post {
+    margin-bottom:22px;
+
+    .site__title--primary {
+      margin-bottom:6px;
+    }
+  }
+}

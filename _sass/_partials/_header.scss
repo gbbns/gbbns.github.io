@@ -1,0 +1,86 @@
+/**
+ * Site header
+ */
+.site__header {
+  border-top: 5px solid $grey-color-dark;
+  border-bottom: 1px solid $grey-color-light;
+  position: relative;
+
+  .site__title {
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: -1px;
+    margin-bottom: 0;
+    float: left;
+
+    &,
+    &:visited {
+      color: $grey-color-dark;
+    }
+  }
+
+  .site__nav {
+
+    .menu-icon {
+      display: none;
+    }
+
+    .page__link {
+      color: $c-text--primary;
+      line-height: $base-line-height;
+
+      // Gaps between nav items, but not on the first one
+      &:not(:first-child) {
+        margin-left: 20px;
+      }
+
+      &:hover {
+        color:#3E606F;
+      }
+    }
+
+    @include media-query($on-palm) {
+      position: absolute;
+      top: 9px;
+      right: 30px;
+      background-color: $c-background--primary;
+      border: 1px solid $grey-color-light;
+      border-radius: 5px;
+      text-align: right;
+
+      .menu-icon {
+        display: block;
+        float: right;
+        width: 36px;
+        height: 26px;
+        line-height: 0;
+        padding-top: 10px;
+        text-align: center;
+
+        > svg {
+          width: 18px;
+          height: 15px;
+
+          path {
+            fill: $grey-color-dark;
+          }
+        }
+      }
+
+      .trigger {
+        clear: both;
+        display: none;
+      }
+
+      &:hover .trigger {
+        display: block;
+        padding-bottom: 5px;
+      }
+
+      .page-link {
+        display: block;
+        padding: 5px 10px;
+      }
+    }
+  }
+}

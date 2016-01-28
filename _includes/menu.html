@@ -1,0 +1,20 @@
+    <nav class="menu__primary">
+      {% assign pages = site.pages %}
+      <ul>
+        <li>
+          <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Home</a>
+        </li>
+        {% for p in pages %}
+        {% if p.title != null %}
+          {% if p.layout == "page" %}
+          <li>
+            <a class="sidebar-nav-item{% if page.url == p.url %} active{% endif %}" href="{{ p.url }}">{{ p.title }}</a>
+          </li>
+          {% endif %}
+
+          {% endif %}
+        {% endfor %}
+      </ul>
+
+
+    </nav>

@@ -8,10 +8,13 @@
   position: relative;
 
   .site__title {
-    font-size: 16px;
+    font-size: 32px;
     line-height: 1.4;
     letter-spacing: -1px;
     margin-bottom: 0;
+    font-family: $base-header-font-family;
+    margin-bottom: 8px;
+    display: block;
 
     &,
     &:visited {

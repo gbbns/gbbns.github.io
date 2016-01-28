@@ -33,8 +33,9 @@ $grey-color-dark:       darken($grey-color, 25%);
 $base-font-family:        'Vollkorn', serif;
 $base-header-font-family: 'Raleway', sans-serif;
 $base-font-size:          16px !default;
-
+$base-header-size:        $base-font-size * 2;
 $small-font-size:         $base-font-size * 0.875;
+
 $base-line-height:        24px !default;
 
 $spacing-unit:            30px;

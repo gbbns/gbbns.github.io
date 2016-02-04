@@ -16,7 +16,7 @@
 }
 
 .post__content {
-	margin-bottom: $spacing-unit;
+	margin-bottom: $base-spacing-unit;
 
 	.site__title--secondary {
 		margin-bottom:6px;
@@ -53,7 +53,7 @@
 }
 
 .post__meta {
-	font-size: $small-font-size;
+	font-size: $f-size-h2;
 	color: $grey-color;
 }
 

@@ -443,8 +443,8 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-    font-size: $base-font-size;
-    font-family:$base-font-family;
+    font-size: $f-size-body;
+    font-family:$f-default;
     margin: 0 0 12px 0px;
     font-weight: 400;
     color: $c-text--primary;
@@ -461,12 +461,12 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
+    margin-bottom: $base-spacing-unit / 2;
 }
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
-  font-family:  $base-header-font-family;
+  font-family:  $f-title;
   color: $c-text--primary;
   margin:0px 0 20px -2px;
   text-transform: uppercase;
@@ -495,7 +495,7 @@ figure > img {
 }
 
 figcaption {
-    font-size: $small-font-size;
+    font-size: $f-size-h2;
 }
 
 
@@ -505,7 +505,7 @@ figcaption {
  */
 ul, ol {
   line-height:1.5;
-  margin-left: $spacing-unit;
+  margin-left: $base-spacing-unit;
 }
 
 li {
@@ -551,7 +551,7 @@ a {
 blockquote {
     color: $grey-color;
     border-left: 4px solid $grey-color-light;
-    padding-left: $spacing-unit / 2;
+    padding-left: $base-spacing-unit / 2;
     font-size: 18px;
     letter-spacing: -1px;
     font-style: italic;

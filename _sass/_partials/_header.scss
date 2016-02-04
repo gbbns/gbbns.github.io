@@ -42,7 +42,7 @@
       }
     }
 
-    @include media-query($on-palm) {
+    @include respond-min($bp-md) {
       position: absolute;
       top: 9px;
       right: 30px;

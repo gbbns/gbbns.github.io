@@ -19,5 +19,8 @@
 
   .nav-primary__link {
     display: block;
+    font-family: $base-header-font-family;
+    text-transform: uppercase;
+    font-size: 20px;
   }
 }

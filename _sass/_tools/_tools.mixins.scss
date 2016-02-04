@@ -1,0 +1,139 @@
+// TOOLS - Mixins...............Globally available mixins.
+
+///*------------------------------------*\
+//    #MIXINS
+//\*------------------------------------*/
+
+// Global mixins available to the entire project. Define file-specific
+// mixins inside the file to which they relate.
+
+
+
+
+
+// Mixin to create a declaration whose value is a rem unit. Also provide pixel fallback.
+//
+// .simple-usage {
+//   @include rem(padding, 10px);
+// }
+
+@mixin rem($property, $value) {
+    #{$property}: $value;
+    #{$property}: remify($value);
+}
+
+
+// Mixin to drop micro clearfix into a selector.
+//
+// .simple-usage {
+//   @include clearfix();
+// }
+//
+// .detailed-usage {
+//   @include clearfix(important);
+// }
+
+@mixin clearfix($important: false) {
+
+	// Determine whether or not to make declarations important.
+	@if ($important == false) {
+		$important: null;
+	} @else {
+		$important: !important;
+	}
+
+	&:after {
+		content: "" $important;
+		display: table $important;
+		clear: both $important;
+	}
+
+}
+
+
+// Generate `:hover` and `:focus` styles in one go.
+@mixin hocus() {
+	&:hover,
+	&:focus {
+		@content;
+	}
+}
+
+@mixin flexbox() {
+	display: flex;
+	display: -webkit-flex;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+}
+
+//center item in the vertical middle
+@mixin verticalCenter() {
+	transform: translate(0, -50%);
+	-webkit-transform: translate(0, -50%);
+	-ms-transform: translate(0, -50%);
+	-moz-transform: translate(0, -50%);
+	-o-transform: translate(0, -50%);
+	top: 50%;
+}
+
+@mixin old-ie {
+	@if $old-ie {
+		@content;
+	}
+}
+
+@mixin old-ie-scaled-svg($d-px-target) {
+	@if $old-ie {
+		font-size: 1rem;
+		zoom: ($d-px-target/$d-px);
+	}
+}
+
+@mixin respond-max($width) {
+	@if $fix-mqs {
+		@if $fix-mqs <= $width {
+			@content;
+		}
+	} @else {
+		@media screen and (max-width: $width) {
+			@content;
+		}
+	}
+}
+
+@mixin respond-max-landscape($width) {
+	@if $fix-mqs {
+		@if $fix-mqs <= $width {
+			@content;
+		}
+	} @else {
+		@media screen and (max-width: $width) and (orientation: landscape) {
+			@content;
+		}
+	}
+}
+
+
+@mixin respond-min($width) {
+	@if $fix-mqs {
+		@if $fix-mqs >= $width {
+			@content;
+		}
+	} @else {
+		@media screen and (min-width: $width) {
+			@content;
+		}
+	}
+}
+
+@mixin respond-min-max($width--min, $width--max) {
+	@if $fix-mqs {
+		@if $fix-mqs >= $width--min and $fix-mqs <= $width--max {
+			@content;
+		}
+	} @else {
+		@media screen and (min-width: $width--min) and (max-width: $width--max) {
+			@content;
+		}
+	}
+}

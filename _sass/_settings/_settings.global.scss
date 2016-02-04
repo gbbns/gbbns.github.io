@@ -1,0 +1,57 @@
+// ====================================================================== //
+// BREAKPOINTS
+// ====================================================================== //
+
+$bp-sm:        30em;    // 480px / 16px
+
+$bp-md--sm:    40em;    // 640px / 16px
+$bp-md:        48em;    // 768px / 16px
+$bp-md-lg:     61.25em; // 980px / 16px
+
+$bp-lg:        65em;    // 1040px / 16px
+
+// ====================================================================== //
+// FONTS
+// ====================================================================== //
+
+$f-default:			sans-serif; // No Arial or Helvetica because http://css-tricks.com/sans-serif
+$f-title:			'futura-pt','Trebuchet MS', Arial, sans-serif;
+$f-title--sub:		Georgia, Times, 'Times New Roman', serif;
+$f-title--primary:	Georgia, Times, 'Times New Roman', serif;
+
+$f-size-h1:  		29px;
+$f-size-h1-mobile:	20px;
+$f-size-h2: 		20px;
+$f-size-h3:			18px;
+$f-size-h4:			16px;
+$f-size-h5:			14px;
+$f-size-h6:			13px;
+
+$f-size--max:		42px;
+
+$f-default-size:	12px;
+
+// ====================================================================== //
+// DIMENSIONS
+// ====================================================================== //
+$d-px:				13px; // Must equal pixel value of $d-rem
+$d-em:				0.813em; // Must equal rem value of $d-px
+$d-rem:				0.8125rem; // Must equal rem value of $d-px
+
+$d-grid__cols--sm:	2;
+$d-grid__cols--md:	12;
+$d-grid__cols--lg:	12;
+
+$d-gutter:			24px;
+$d-gutter--double:	48px;
+$d-gutter--half:	12px;
+
+// ====================================================================== //
+// MISC
+// ====================================================================== //
+
+$fix-mqs:			false !default;
+$old-ie:			false !default;
+
+$float:				left !default;
+$float--opposite:	right !default;

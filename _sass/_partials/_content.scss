@@ -1,8 +1,13 @@
+// Main content container
+
 .content {
+
   .site__title {
+
     &--primary {
       font-size: 60px;
     }
+
     &--secondary {
       font-size: 30px;
     }
@@ -13,6 +18,7 @@
   }
 
   &__aside {
+    
     &--title {
       font-size:26px;
       font-weight:bold;

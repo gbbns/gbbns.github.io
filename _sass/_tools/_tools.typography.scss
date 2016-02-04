@@ -1,0 +1,158 @@
+// TOOLS - Typography.................Fonts, weights and line-heights.
+
+@mixin font-family($family) {
+
+	@if ($family == "sans-serif") {
+		font-family: Lato, sans-serif;
+	}
+
+	@elseif ($family == "serif") {
+		font-family: Baskerville, Garamond, Palatino, "Palatino Linotype", "Hoefler Text", "Times New Roman", serif;
+	}
+
+	@else {
+		@warn "#{$family} is not a valid font-family."
+	}
+
+}
+
+
+
+@mixin heading($size: false, $caps: false, $brand: true) {
+	@if($size!=false) {
+		@include font-size($size);
+	}
+	@if($caps==true) {
+		text-transform: uppercase;
+	}
+	@if($brand==true){
+		font-family: $f-title;
+	} else {
+		font-family: $f-title--primary;
+	}
+	font-feature-settings: 'kern';
+	font-kerning: normal;
+}
+
+
+// Generate a font-size and baseline-compatible line-height.
+@mixin font-size($size, $line-height: auto) {
+	//font-size: $size;
+	font-size: ($size / $base-font-size) * 1rem;
+
+	@if $line-height == auto {
+		line-height: ceil($size / $base-line-height) * ($base-line-height / $size);
+	}
+
+	@else {
+
+		@if (type-of($line-height) == number or $line-height == inherit or $line-height == normal) {
+			line-height: $line-height;
+		}
+
+		@elseif ($line-height != none and $line-height != false) {
+			@warn "D’oh! ‘#{$line-height}’ is not a valid value for `line-height`."
+		}
+
+	}
+
+}
+
+
+// Map keywords onto our numbered weights for convenience.
+@mixin font-weight($weight) {
+
+	@if ($weight == normal) {
+		font-weight: 400;
+	}
+
+	@elseif ($weight == bold) {
+		font-weight: 700;
+	}
+
+	@elseif ($weight == black) {
+		font-weight: 900;
+	}
+
+	@else {
+		@warn "#{$weight} is not a valid font-weight."
+	}
+
+}
+
+
+
+
+
+// Simple truncation mixin to cut off text using an ellipsis after a certain
+// width.
+//
+// .simple-usage {
+//   @include truncate();
+// }
+//
+// .detailed-usage {
+//   @include truncate(<value>);
+// }
+@mixin truncate($width: 100%) {
+	max-width: $width;
+	white-space:nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+
+
+
+@mixin font-face($family, $name, $style-name) {
+
+	$filepath: '../webfonts/' + $name;
+	@font-face {
+
+		font-family: "#{$family}";
+		src: url($filepath + '.eot');
+		src: url($filepath + '.eot?#iefix') format('embedded-opentype'),
+			 url($filepath + '.woff') format('woff'),
+			 url($filepath + '.ttf') format('truetype'),
+			 url($filepath + '.svg#' + $style-name + '') format('svg');
+		font-weight: bold;
+		font-style: normal;
+	}
+}
+
+@include font-face('SSSocial', 'ss-social-circle', 'SSSocialCircle');
+@include font-face('slick', 'slick', 'slick');
+
+/* This triggers a redraw in IE to Fix IE8's :before content rendering. */
+html:hover [class^="ss-"]{-ms-zoom: 1;}
+
+.ss-icon, .ss-icon.ss-social, .ss-icon.ss-social-circle,
+[class^="ss-"]:before, [class*=" ss-"]:before,
+[class^="ss-"][class*=" ss-social"]:before, [class*=" ss-"][class*=" ss-social"]:before,
+[class^="ss-"].right:after, [class*=" ss-"].right:after,
+[class^="ss-"][class*=" ss-social"].right:after, [class*=" ss-"][class*=" ss-social"].right:after{
+  font-family: "SSSocial";
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-rendering: optimizeLegibility;
+  white-space: nowrap;
+  /*-webkit-font-feature-settings: "liga"; Currently broken in Chrome >= v22. Falls back to text-rendering. Safari is unaffected. */
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  -o-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+}
+
+.ss-icon.ss-social-circle,
+[class^="ss-"].ss-social-circle:before, [class*=" ss-"].ss-social-circle:before,
+[class^="ss-"].ss-social-circle.right:after, [class*=" ss-"].ss-social-circle.right:after{
+  font-weight: bold;
+}
+
+[class^="ss-"].right:before,
+[class*=" ss-"].right:before{display:none;content:'';}
+
+.ss-facebook:before,.ss-facebook.right:after{content:''}.ss-twitter:before,.ss-twitter.right:after{content:''}.ss-linkedin:before,.ss-linkedin.right:after{content:''}.ss-googleplus:before,.ss-googleplus.right:after{content:''}.ss-tumblr:before,.ss-tumblr.right:after{content:''}.ss-wordpress:before,.ss-wordpress.right:after{content:''}.ss-blogger:before,.ss-blogger.right:after{content:''}.ss-posterous:before,.ss-posterous.right:after{content:''}.ss-youtube:before,.ss-youtube.right:after{content:''}.ss-vimeo:before,.ss-vimeo.right:after{content:''}.ss-flickr:before,.ss-flickr.right:after{content:''}.ss-instagram:before,.ss-instagram.right:after{content:''}.ss-pinterest:before,.ss-pinterest.right:after{content:''}.ss-svpply:before,.ss-svpply.right:after{content:''}.ss-readmill:before,.ss-readmill.right:after{content:''}.ss-dropbox:before,.ss-dropbox.right:after{content:''}.ss-dribbble:before,.ss-dribbble.right:after{content:''}.ss-behance:before,.ss-behance.right:after{content:''}.ss-github:before,.ss-github.right:after{content:''}.ss-octocat:before,.ss-octocat.right:after{content:''}.ss-stackoverflow:before,.ss-stackoverflow.right:after{content:''}.ss-paypal:before,.ss-paypal.right:after{content:''}.ss-kickstarter:before,.ss-kickstarter.right:after{content:''}.ss-foursquare:before,.ss-foursquare.right:after{content:''}.ss-skype:before,.ss-skype.right:after{content:''}.ss-rdio:before,.ss-rdio.right:after{content:''}.ss-spotify:before,.ss-spotify.right:after{content:''}.ss-lastfm:before,.ss-lastfm.right:after{content:''}.ss-mail:before,.ss-mail.right:after{content:'✉'}.ss-like:before,.ss-like.right:after{content:'👍'}.ss-rss:before,.ss-rss.right:after{content:''}

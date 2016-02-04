@@ -5,11 +5,15 @@
   .site__title {
 
     &--primary {
-      font-size: 60px;
+      font-size: remy($f-size-h1-mobile);
+
+      @include respond-min($bp-md){
+        font-size: remy($f-size-max);
+      }
     }
 
     &--secondary {
-      font-size: 30px;
+      font-size: remy($f-size-h2);
     }
   }
 
@@ -18,9 +22,9 @@
   }
 
   &__aside {
-    
+
     &--title {
-      font-size:26px;
+      font-size: remy($f-size-h2);
       font-weight:bold;
       margin-bottom:8px;
     }
@@ -34,7 +38,7 @@
   padding: $base-spacing-unit 0;
 
   .page__heading {
-    font-size: 20px;
+    font-size: remy($f-size-h1);
   }
 
   .post {

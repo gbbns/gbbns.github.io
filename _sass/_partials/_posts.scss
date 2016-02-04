@@ -6,12 +6,12 @@
 }
 
 .post__title {
-	font-size: 42px;
+	font-size: remy($f-size-max);
 	letter-spacing: -1px;
 	line-height: 1;
 
   @include respond-min($bp-md) {
-	  font-size: 36px;
+	  font-size: remy($f-size-h1);
 	}
 }
 
@@ -22,24 +22,17 @@
 		margin-bottom:6px;
 
     @include respond-min($bp-md) {
-		  font-size: 28px;
+      font-size: remy($f-size-h2);
 		}
 	}
 
 	h3 {
-		font-size: 26px;
-
-    @include respond-min($bp-md) {
-			font-size: 22px;
-		}
+    font-size: remy($f-size-h3);
 	}
 
 	h4 {
-		font-size: 20px;
+    font-size: remy($f-size-h4);
 
-    @include respond-min($bp-md) {
-			font-size: 18px;
-		}
 	}
 }
 
@@ -59,9 +52,9 @@
 
 .post__link {
 	display: block;
-	font-size: 20px;
+	font-size: remy($f-size-h2);
 }
 
 .post__date {
-	font-size:12px;
+	font-size:remy($f-size-body);
 }

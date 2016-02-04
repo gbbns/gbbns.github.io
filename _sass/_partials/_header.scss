@@ -4,11 +4,12 @@
 .site__header {
   border-top: 1px solid $grey-color-dark;
   border-bottom: 1px solid $grey-color-light;
-  padding: 20px;
+  padding: 20px 0;
   position: relative;
 
   .site__title {
-    font-size: 32px;
+    font-size: remy($f-size-h1-mobile);
+    @include font-weight(normal);
     line-height: 1.4;
     letter-spacing: -1px;
     margin-bottom: 0;
@@ -16,7 +17,7 @@
     margin-bottom: 8px;
     display: block;
 
-    &,
+    &:hover,
     &:visited {
       color: $grey-color-dark;
     }

@@ -54,21 +54,6 @@ $grey-color:            #828282;
 $grey-color-light:      lighten($grey-color, 40%);
 $grey-color-dark:       darken($grey-color, 25%);
 
-
-/*
-   Fonts
-   ========================================================================== */
-
-$f-default:       'Vollkorn', serif;
-$f-title:         'Raleway', sans-serif;
-
-$f-size-body:      16px !default;
-$f-size-h1:       $base-font-size * 2;
-$f-size-h2:      $base-font-size * 0.875;
-
-
-
-
 // Width of the content area
 $d-wrapper-width:        90%;
 $d-content-width:        800px;

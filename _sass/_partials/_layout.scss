@@ -2,18 +2,15 @@
  * Wrapper
  */
 .wrapper {
-  max-width: -webkit-calc(90% - (5% * 2));
-  max-width:         calc(90% - (5% * 2));
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
   padding-right: $base-spacing-unit;
   padding-left: $base-spacing-unit;
   @include clearfix;
 
-  @include respond-min($bp-md) {
-    max-width: -webkit-calc(#{d-wrapper-width} - (#{$base-spacing-unit}));
-    max-width:         calc(#{d-wrapper-width} - (#{$base-spacing-unit}));
-    padding-right: $base-spacing-unit / 2;
-    padding-left: $base-spacing-unit / 2;
-  }
+  //@include respond-min($bp-md) {
+  //  max-width: -webkit-calc(#{d-wrapper-width} - (#{$base-spacing-unit}));
+  //  max-width:         calc(#{d-wrapper-width} - (#{$base-spacing-unit}));
+  //  padding-right: $base-spacing-unit / 2;
+  //  padding-left: $base-spacing-unit / 2;
+  //}
 }

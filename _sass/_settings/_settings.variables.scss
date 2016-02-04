@@ -59,7 +59,7 @@ $grey-color-dark:       darken($grey-color, 25%);
    Fonts
    ========================================================================== */
 
-$f-default        'Vollkorn', serif;
+$f-default:       'Vollkorn', serif;
 $f-title: 'Raleway', sans-serif;
 
 $f-size-body:          16px !default;

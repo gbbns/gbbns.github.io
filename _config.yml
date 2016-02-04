@@ -27,4 +27,4 @@ social-link:
 # Build settings
 markdown: kramdown
 
-permalink: /:year/:month/:title
+permalink: /:year/:month/:day/:title

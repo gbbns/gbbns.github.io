@@ -2,7 +2,7 @@
 layout: post
 title:  "2015 - A belated preview"
 ---
-This blog post is by no means going to cover the entire year, infact it may be irrelevant before it even gets published, all I will say is that this year is shaping up to be a good one, I can feel it.
+This blog post is by no means going to cover the entire year, in-fact it may be irrelevant before it even gets published, all I will say is that this year is shaping up to be a good one, I can feel it.
 
 Towards the end of last year I had a period of reflection. I looked back at what I had achieved during the year, as well as having an eye on what I wished to develop in the coming year &mdash; both personally and professionally.
 

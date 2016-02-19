@@ -2,6 +2,7 @@
 layout: post
 title:  "Motivation"
 date:   2016-02-19 08:30:00
+author: "Chris"
 categories: work personal motivation
 ---
 **Motivation.**

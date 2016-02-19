@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "UI overhaul"
+author: "Chris"
 ---
 I've never _truly_ been happy with my site, it's always been in a state of redesign, typical for a UI dev, eh?!
 

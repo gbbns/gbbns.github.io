@@ -5,7 +5,13 @@ layout: default
 
   <header class="post__header">
     <h1 class="site__title--primary">{{ page.title }}</h1>
-    <p class="post__meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+    <p class="post__meta">
+      {% assign d = page.date | date: "%-d" %}
+      {{ page.date | date: "%B" }}
+      {% case d %}{% when "1" or "21" or "31" %}{{ d }}st{% when "2" or "22" %}{{ d }}nd{% when "3" or "23" %}{{ d }}rd{% else %}{{ d }}th{% endcase %},
+      {{ page.date | date: "%Y" }}
+      {% if page.author %}<span class="post__meta-author"><small>by</small> {{ page.author }}</span>{% endif %}
+      {% if page.categories %}<span class="visuallyhidden">, {{ page.categories }}</span>{% endif %}</p>
   </header>
 
   <article class="post__content">

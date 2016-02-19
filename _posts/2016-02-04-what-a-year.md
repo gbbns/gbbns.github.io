@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "A whirlwind 12 months"
+author: "Chris"
 ---
 
 It's now February 2016, almost a year to the day that Samuel was born, and things are only just beginning to slow down enough to actually gather my thoughts from the last 12 months.

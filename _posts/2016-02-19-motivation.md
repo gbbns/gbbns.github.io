@@ -29,7 +29,7 @@ Fast forward 12 months, I'd just had a 121 with my team leads. It didn't go well
 
 I felt like a failure, but I didn't let it get me down -- well, not too much -- instead, afterwards I got my notepad out and again started to make notes.
 
-I analysed what was said, whether I felt it fair or not -- and let's just be clear, not _**all**_ of what was said was either fair or totally justified, in fact I actually feel that most of what was said was totally unjust and pretty disrespectful -- I looked at reasons why these things may have been said, I looked at what I could do to stop things, to improve things.
+I analysed what was said, whether I felt it fair or not -- and let's just be clear, not _**all**_ of what was said was either fair or totally justified -- I looked at reasons why these things may have been said, I looked at what I could do to stop things, to improve things.
 
 These quiet musings, led me to one **very** clear epiphany -- I was time for me to move jobs -- this move turned out to be far more important that I could _ever_ imagine.
 

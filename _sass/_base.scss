@@ -474,7 +474,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-  line-height:1.5;
+  line-height:1.4;
+
+  &:first-child {
+
+    &:first-letter {
+      float: left;
+      font-size: remy(70px);
+      line-height: remy(70px);
+      padding: 0px 6px 0px 0px;
+    }
+  }
 }
 
 /**

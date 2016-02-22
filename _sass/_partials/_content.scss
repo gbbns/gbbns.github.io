@@ -1,51 +1,41 @@
 // Main content container
 
 .content {
-
   .site__title {
-
     &--primary {
-      font-size: remy($f-size-h1-mobile);
-
-      @include respond-min($bp-md){
-        font-size: remy($f-size-max);
-      }
+      @include    respond-min($bp-md);
+      font-size : remy($f-size-h1-mobile);
     }
-
     &--secondary {
-      font-size: remy($f-size-h2);
+      font-size : remy($f-size-h2);
     }
   }
-
   &__main {
-    margin-bottom:14px;
+    margin-bottom : 14px;
   }
-
   &__aside {
-
     &--title {
-      font-size: remy($f-size-h2);
-      font-weight:bold;
-      margin-bottom:8px;
+      margin-bottom : 8px;
+      font-size     : remy($f-size-h2);
+      font-weight   : bold;
     }
   }
 }
 
-/**
- * Page content
- */
+/*
+  *
+  * Page content
+*/
+
 .page__content {
-  padding: $base-spacing-unit 0;
-
+  padding : $base-spacing-unit 0;
   .page__heading {
-    font-size: remy($f-size-h1);
+    font-size : remy($f-size-h1);
   }
-
   .post {
-    margin-bottom:22px;
-
+    margin-bottom : 22px;
     .site__title--primary {
-      margin-bottom:6px;
+      margin-bottom : 6px;
     }
   }
 }

@@ -4,7 +4,7 @@ title: Home
 ---
 
 <section class="home">
-  <article class="content__main clearfix">
+  <article class="col col--3/4--md content__main clearfix">
     <h1 class="site__title--primary">Hello, I&rsquo;m <abbr title="{{ site.meta.description }}">Chris</abbr>.</h1>
 
     <p>Currently <a href="/work/">front end web developer</a> for <a href="https://www.zuto.com">Zuto</a>, previously <a href="http://www.codecomputerlove.com">7.5 years a Computerlover</a>.</p>
@@ -13,7 +13,7 @@ title: Home
 
   </article>
 
-  <aside class="content__aside clearfix">
+  <aside class="col col--1/4--md content__aside clearfix">
     <h2 class="content__aside--title">Latest blog articles</h2>
     <ul class="post__list">
       {% for post in site.posts limit:3 %}

@@ -7,6 +7,10 @@
   padding: 20px 0;
   position: relative;
 
+  @include respond-min($bp-md){
+    text-align: center;
+  }
+
   .site__title {
     font-size: remy($f-size-h1-mobile);
     @include font-weight(normal);
@@ -16,75 +20,48 @@
     font-family: $f-title;
     margin-bottom: 8px;
     display: block;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto 8px;
+
+    @include respond-min($bp-md){
+      margin-left: 2.5rem;
+      width: auto;
+    }
 
     &:hover,
     &:visited {
       color: $grey-color-dark;
     }
+
+    @include respond-min($bp-md) {
+      margin-left: 0;
+    }
   }
 
-  .site__nav {
+  .site-meta-title,
+  .site-meta-author {
+    display: block;
+    text-align: center;
 
-    .menu-icon {
-      display: none;
+    @include respond-min($bp-md){
+      display: inline-block;
+      text-align: left;
     }
+  }
 
-    .page__link {
-      color: $c-text--primary;
-      line-height: $base-line-height;
+  .site-meta-title {
+    font-size: remy(24px);
 
-      // Gaps between nav items, but not on the first one
-      &:not(:first-child) {
-        margin-left: 20px;
-      }
+    @include respond-min($bp-md) {
+      font-size: inherit;
 
-      &:hover {
-        color:#3E606F;
+      &:after {
+        content: '/';
+        font-size: inherit;
+        display: inline-block;
+        margin: 0 0 0 6px;
       }
     }
-
-    /*@include respond-max($bp-md) {
-      position: absolute;
-      top: 9px;
-      right: 30px;
-      background-color: $c-background--primary;
-      border: 1px solid $grey-color-light;
-      border-radius: 5px;
-      text-align: right;
-
-      .menu-icon {
-        display: block;
-        float: right;
-        width: 36px;
-        height: 34px;
-        line-height: 0;
-        padding-top: 10px;
-        text-align: center;
-
-        > svg {
-          width: 18px;
-          height: 15px;
-
-          path {
-            fill: $grey-color-dark;
-          }
-        }
-      }
-
-      .trigger {
-        clear: both;
-        display: none;
-      }
-
-      &:hover .trigger {
-        display: block;
-        padding-bottom: 5px;
-      }
-
-      .page-link {
-        display: block;
-        padding: 5px 10px;
-      }
-    }*/
   }
 }

@@ -1,5 +1,7 @@
 body {
-  border: 15px solid lighten($c-brand-blue--light, 25%);
+  @include respond-min($bp-md){
+    border: 15px solid lighten($c-brand-blue--light, 25%);
+  }
 }
 
 * {

@@ -25,6 +25,22 @@
       font-size: remy($f-size-h2);
 		}
 	}
+  p {
+    
+    &:first-child {
+      font-size: remy(20px);
+      margin-bottom: 30px;
+      line-height: 1.5;
+
+      &:first-letter {
+        float: left;
+        font-size: remy(70px);
+        line-height: remy(70px);
+        padding: 0px 6px 0px 0px;
+        margin-bottom: -12px;
+      }
+    }
+  }
 
 	h3 {
     font-size: remy($f-size-h3);

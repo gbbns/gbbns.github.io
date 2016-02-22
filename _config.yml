@@ -1,16 +1,17 @@
 # Site settings
 main:
-  title: The personal site of UX developer Chris Gibbons.
+  title: UX design engineering
   email: me@chrisgibbons.co.uk
-  description: Chris Gibbons // point12 - Front End Web Developer
+  description: Chris Gibbons // Front End Web Developer
+  author: Chris Gibbons
 
 baseurl: / # the subpath of your site, e.g. /blog/
 url: "http://www.chrisgibbons.co.uk" # the base hostname & protocol for your site
 
 meta:
-  description: "Chris Gibbons, a senior front end &amp; freelance developer based in Blackpool, Lancashire &amp; Manchester, UK. I build flexible responsive websites for the all users of the web!"
+  description: "Chris Gibbons, a senior front end, UX developer based in Blackpool, Lancashire &amp; Manchester, UK. I build flexible responsive websites for the all users of the web!"
   title: "Freelance front end web developer -- Manchester - Lancashire -- Chris Gibbons"
-  keywords: "Chris Gibbons, chris gibbons, point12, blackpool, lancashire,england, uk, united kingdom, html, css, xhtml, web standards, accessibility, javascript"
+  keywords: "Chris Gibbons, chris gibbons, gbbns, blackpool, lancashire,england, uk, united kingdom, html, css, xhtml, web standards, accessibility, javascript"
 
 sass:
   sass_dir: _sass
@@ -18,7 +19,7 @@ sass:
 
 social-link:
   twitter: jibubo
-  github:  point12
+  github:  gbbns
   linkedin: cdgibbons
   lastfm: jibubo
   flickr: jibubo

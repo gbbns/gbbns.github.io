@@ -5,8 +5,6 @@ date:   2016-02-19 08:30:00
 author: "Chris"
 categories: work personal motivation
 ---
-**Motivation.**
-
 When it's **not** there, life is tough, **everything** is a struggle, things you once enjoyed start to become a chore. Sound familiar to anyone?
 
 Several years ago, I hit this very problem, and it's taken until now for me to properly speak up about it.

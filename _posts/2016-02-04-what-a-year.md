@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "A whirlwind 12 months"
+date:   2016-02-04 08:30:00
 author: "Chris"
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "2015 - A belated preview"
+date:   2015-03-06 08:30:00
 author: "Chris"
 ---
 This blog post is by no means going to cover the entire year, in-fact it may be irrelevant before it even gets published, all I will say is that this year is shaping up to be a good one, I can feel it.

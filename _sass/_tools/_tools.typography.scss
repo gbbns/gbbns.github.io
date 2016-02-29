@@ -1,23 +1,5 @@
 // TOOLS - Typography.................Fonts, weights and line-heights.
 
-@mixin font-family($family) {
-
-	@if ($family == "sans-serif") {
-		font-family: Lato, sans-serif;
-	}
-
-	@elseif ($family == "serif") {
-		font-family: Baskerville, Garamond, Palatino, "Palatino Linotype", "Hoefler Text", "Times New Roman", serif;
-	}
-
-	@else {
-		@warn "#{$family} is not a valid font-family."
-	}
-
-}
-
-
-
 @mixin heading($size: false, $caps: false, $brand: true) {
 	@if($size!=false) {
 		@include font-size($size);
@@ -45,7 +27,6 @@
 	}
 
 	@else {
-
 		@if (type-of($line-height) == number or $line-height == inherit or $line-height == normal) {
 			line-height: $line-height;
 		}
@@ -53,9 +34,7 @@
 		@elseif ($line-height != none and $line-height != false) {
 			@warn "D’oh! ‘#{$line-height}’ is not a valid value for `line-height`."
 		}
-
 	}
-
 }
 
 

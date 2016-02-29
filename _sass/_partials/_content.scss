@@ -5,6 +5,10 @@
     &--primary {
       @include    respond-min($bp-md);
       font-size : remy($f-size-h1-mobile);
+
+      @include respond-min($bp-md){
+        font-size: remy($f-size-max);
+      }
     }
     &--secondary {
       font-size : remy($f-size-h2);

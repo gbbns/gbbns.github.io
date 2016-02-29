@@ -8,7 +8,7 @@
   position: relative;
 
   @include respond-min($bp-md){
-    text-align: center;
+    // text-align: center;
   }
 
   .site__title {
@@ -27,6 +27,8 @@
     @include respond-min($bp-md){
       margin-left: 2.5rem;
       width: auto;
+      display: inline-block;
+      margin: 0;
     }
 
     &:hover,
@@ -45,7 +47,7 @@
     text-align: center;
 
     @include respond-min($bp-md){
-      display: inline-block;
+      //display: inline-block;
       text-align: left;
     }
   }

@@ -1,6 +1,7 @@
 .site__navigation {
 
   @include respond-min($bp-md) {
+    float: right;
     position: relative;
   }
 
@@ -108,6 +109,11 @@
 }
 
 .nav-primary__wrapper {
+
+  @include respond-min($bp-md) {
+    display: inline-block;
+  }
+
   .is-active & {
     position: fixed;
     top: 0;

@@ -1,6 +1,9 @@
 // Main content container
 
 .content {
+  border-left: 1px solid $grey-color-dark;
+  border-right: 1px solid $grey-color-dark;
+
   .site__title {
     &--primary {
       @include    respond-min($bp-md);
@@ -32,12 +35,16 @@
 */
 
 .page__content {
-  padding : $base-spacing-unit 0;
+  padding : $base-spacing-unit;
   .page__heading {
     font-size : remy($f-size-h1);
   }
-  .post {
+  .post__list {
     margin-bottom : 22px;
+
+    .post__header {
+      text-align: left;
+    }
     .site__title--primary {
       margin-bottom : 6px;
     }

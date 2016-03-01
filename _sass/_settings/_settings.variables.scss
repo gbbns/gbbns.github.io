@@ -45,17 +45,18 @@ $c-brand-sand--normal:  #E6E2AF;
 $c-brand-sand--dark:    #A7A37E;
 
 $c-text--primary:       #193441;
+$c-text--primary-dark:  darken($c-text--primary, 25%);
 
 $c-background--primary: #FCFFF5;
 
 $c-brand:               #2a7ae2;
 
 $grey-color:            #828282;
-$grey-color-light:      lighten($grey-color, 40%);
-$grey-color-dark:       darken($grey-color, 25%);
+$grey-color-light:      #ECEFF1;
+$grey-color-dark:       #D2D1D1;
 
 // Width of the content area
 $d-wrapper-width:        90%;
 $d-content-width:        800px;
-$on-palm:                 600px;
-$on-laptop:               800px;
+$on-palm:                600px;
+$on-laptop:              800px;

@@ -1,6 +1,6 @@
 body {
   @include respond-min($bp-md){
-    border: 15px solid lighten($c-brand-blue--light, 25%);
+    border: 60px solid $grey-color-light;
   }
 }
 

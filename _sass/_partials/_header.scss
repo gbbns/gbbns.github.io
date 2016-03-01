@@ -2,7 +2,7 @@
  * Site header
  */
 .site__header {
-  border-top: 1px solid $grey-color-dark;
+  border: 1px solid $grey-color-dark;
   border-bottom: 1px solid $grey-color-light;
   padding: 20px 0;
   position: relative;
@@ -12,7 +12,7 @@
   }
 
   .site__title {
-    font-size: remy($f-size-h1-mobile);
+    font-size: remy($f-size-title);
     @include font-weight(normal);
     line-height: 1.4;
     letter-spacing: -1px;
@@ -24,20 +24,21 @@
     text-align: center;
     margin: 0 auto 8px;
 
-    @include respond-min($bp-md){
+    @include respond-min-max($bp-md, $bp-md-lg) {
+      margin: 0 auto;
+    }
+
+    @include respond-min($bp-md-lg) {
       margin-left: 2.5rem;
       width: auto;
       display: inline-block;
       margin: 0;
+      margin-left: 0;
     }
 
     &:hover,
     &:visited {
-      color: $grey-color-dark;
-    }
-
-    @include respond-min($bp-md) {
-      margin-left: 0;
+      color: $c-text--primary-dark;
     }
   }
 
@@ -46,8 +47,11 @@
     display: block;
     text-align: center;
 
-    @include respond-min($bp-md){
-      //display: inline-block;
+    @include respond-min-max($bp-md, $bp-md-lg) {
+      text-align: center;
+    }
+
+    @include respond-min($bp-md-lg) {
       text-align: left;
     }
   }
@@ -57,13 +61,6 @@
 
     @include respond-min($bp-md) {
       font-size: inherit;
-
-      &:after {
-        content: '/';
-        font-size: inherit;
-        display: inline-block;
-        margin: 0 0 0 6px;
-      }
     }
   }
 }

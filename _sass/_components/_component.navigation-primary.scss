@@ -1,6 +1,6 @@
 .site__navigation {
 
-  @include respond-min($bp-md) {
+  @include respond-min($bp-md-lg) {
     float: right;
     position: relative;
   }
@@ -30,7 +30,6 @@
   &:focus {
     text-decoration: none
   }
-
 
   @include respond-min($bp-md) {
     display: none;
@@ -110,7 +109,12 @@
 
 .nav-primary__wrapper {
 
-  @include respond-min($bp-md) {
+  @include respond-min-max($bp-md, $bp-md-lg) {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  @include respond-min($bp-md-lg) {
     display: inline-block;
   }
 
@@ -134,7 +138,12 @@
   height: 100%;
   vertical-align: middle;
 
-  @include respond-min($bp-md) {
+  @include respond-min-max($bp-md, $bp-md-lg) {
+    display: block;
+    margin: 0 auto;
+  }
+
+  @include respond-min($bp-md-lg) {
     display: inline-block;
     margin-left: -1rem;
   }
@@ -142,21 +151,27 @@
   .nav-primary__item {
     display: none;
     text-align: center;
-    padding: 1rem;
+    padding: 0.5rem;
 
     .is-active & {
       display: block;
       list-style: none;
       width: 100%;
     }
-
     @include respond-min($bp-md) {
       display: inline-block;
+    }
+    
+    @include respond-min-max($bp-md, $bp-md-lg) {
       margin-right: 10px;
 
       &:last-of-type {
         margin-right: 0;
       }
+    }
+
+    @include respond-min($bp-lg) {
+      padding: 0.75rem;
     }
   }
 
@@ -164,6 +179,6 @@
     display: block;
     font-family: $f-title;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: remy($f-size-nav);
   }
 }

@@ -2,7 +2,7 @@
  * Posts
  */
 .post__header {
-  margin-bottom: 12px;
+  margin-bottom: ($base-spacing-unit * 2);
   text-align: center;
 }
 
@@ -17,7 +17,8 @@
 }
 
 .post__content {
-	margin-bottom: $base-spacing-unit;
+  width: 70%;
+  margin: 0 auto $base-spacing-unit;
 
 	.site__title--secondary {
 		margin-bottom:6px;

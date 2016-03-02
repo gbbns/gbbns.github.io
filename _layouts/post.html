@@ -7,11 +7,31 @@ layout: default
     <h1 class="site__title--primary">{{ page.title }}</h1>
     <p class="post__meta">
       {% assign d = page.date | date: "%-d" %}
-      {{ page.date | date: "%B" }}
-      {% case d %}{% when "1" or "21" or "31" %}{{ d }}st{% when "2" or "22" %}{{ d }}nd{% when "3" or "23" %}{{ d }}rd{% else %}{{ d }}th{% endcase %},
-      {{ page.date | date: "%Y" }}
+      <span class="post__meta-datetime">
+        <i class="fa fa-calendar"></i>
+        <time datetime="{{ page.date | date:"%Y-%m-%d" }}">
+          {{ page.date | date: "%B" }}
+          {% case d %}{% when "1" or "21" or "31" %}{{ d }}st{% when "2" or "22" %}{{ d }}nd{% when "3" or "23" %}{{ d }}rd{% else %}{{ d }}th{% endcase %},
+          {{ page.date | date: "%Y" }}
+      </time>
+      </span>
+
       {% if page.author %}<span class="post__meta-author"><small>by</small> {{ page.author }}</span>{% endif %}
-      {% if page.categories %}<span class="visuallyhidden">, {{ page.categories }}</span>{% endif %}</p>
+      {% if page.categories %}<span class="visuallyhidden">, {{ page.categories }}</span>{% endif %}
+
+      {% if include.time_estimate_minutes %}
+        {% assign minutes = include.time_estimate_minutes %}
+      {% else %}
+        {% assign minutes = page.content | number_of_words | divided_by: 180 %}
+        {% if minutes == 0 %}
+          {% assign minutes = 1 %}
+        {% endif %}
+      {% endif %}
+      <span class="post__meta-time">
+        <small><i class="fa fa-clock-o"></i></small>
+        <span>{{ minutes }} min read</span>
+      </span>
+    </p>
   </header>
 
   <article class="post__content">

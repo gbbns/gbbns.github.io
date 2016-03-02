@@ -443,12 +443,11 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-    font-size: $f-size-body;
-    font-family:$f-default;
-    font-weight: 400;
-    color: $c-text--primary;
-    background-color: $c-background--primary;
-    -webkit-text-size-adjust: 100%;
+  font-size: $f-size-body;
+  font-family:$f-default;
+  font-weight: 400;
+  color: $c-text--primary;
+  -webkit-text-size-adjust: 100%;
 }
 
 

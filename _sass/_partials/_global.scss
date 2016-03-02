@@ -1,4 +1,6 @@
 body {
+  background-color: $grey-color-light;
+
   @include respond-min($bp-md){
     border: 60px solid $grey-color-light;
   }
@@ -6,4 +8,8 @@ body {
 
 * {
   box-sizing: border-box;
+}
+
+header, main, footer {
+  background-color: $c-background--primary;
 }

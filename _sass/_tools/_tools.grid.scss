@@ -24,7 +24,7 @@
 	box-sizing: border-box;
 	float: $float;
 	min-height: remy(1px);
-	padding-#{$float}: remy(10px);
+	padding-#{$float}: remy($base-spacing-unit);
 }
 
 @mixin col--stacked {
@@ -46,7 +46,7 @@
 
 @mixin grid {
 	@include clearfix;
-	margin-#{$float}: -#{remy(10px)};
+	margin-#{$float}: -#{remy($base-spacing-unit)};
 }
 
 

@@ -21,4 +21,4 @@ An older site, the client wanted an adaptive experience due to stakeholder requi
 
 Other clients I&rsquo;ve been fortunate to work with include:[Blinds Supermarket](http://www.blinds-supermarket.co.uk), [Velvet Tissue](www.velvettissue.com) , [Hull Trains](http://www.hulltrains.co.uk), [Bayer Cropscience](http://www.bayercropscience.co.uk), [Aldermore](http://www.aldermore.co.uk).
 
-Within the Code FE team, three of us produced an FWA site of the day for a personal project - [Oh-Ley](http://www.oh-ley.com/ for the world cup last year.
+Within the Code FE team, three of us produced an FWA site of the day for a personal project - [Oh-Ley](http://www.oh-ley.com/) for the world cup last year.

@@ -11,4 +11,4 @@ I enjoy the challenge of using &amp; learning new and emerging technologies to b
 
 I also like to take pictures which can be seen on [VSCO](http://jibubo.vsco.co) &amp; [Instagram](http://instagram.com/jibubo).
 
-Specialties: Front-end development, UI/UX, Mobile, Responsive, HTML5, CSS3, Sass, JavaScript (jQuery), Grunt, basic Node.js, SEO, Web Standards, Cross browser testing, A/B testing.
+Specialties: Front-end development, UI/UX, Mobile, Responsive, HTML5, CSS3, Sass, JavaScript (jQuery), Grunt, Gulp, basic Node.js, SEO, Web Standards, Cross browser testing, A/B testing.

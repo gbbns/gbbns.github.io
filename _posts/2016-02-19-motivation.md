@@ -27,9 +27,9 @@ I felt like a failure, but I didn't let it get me down -- well, not too much -- 
 
 I analysed what was said, whether I felt it fair or not -- and let's just be clear, not _**all**_ of what was said was either fair or totally justified -- I looked at reasons why these things may have been said, I looked at what I could do to stop things, to improve things.
 
-These quiet musings, led me to one **very** clear epiphany -- I was time for me to move jobs -- this move turned out to be far more important that I could _ever_ imagine.
+These quiet musings, led me to one **very** clear epiphany -- it was time for me to move jobs -- this move turned out to be far more important that I could _ever_ imagine.
 
-I now blog more that i've ever done, I have more thoughts/opinions on things than I have done for a long long time. I find myself scribbling notes on side projects all the time, I have ideas on things -- not just work related -- a lot more.
+I now blog more than i've ever done, I have more thoughts/opinions on things than I have done for a long long time. I find myself scribbling notes on side projects all the time, I have ideas on things -- not just work related -- a lot more.
 
 Now, I don't think this is sudden influx in motivation is _entirely_ down to a move in jobs, but it's certainly helped.
 

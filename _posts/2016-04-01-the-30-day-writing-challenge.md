@@ -15,9 +15,9 @@ I think the next feeling that passed, after the self gratifying thought that I'd
 
 And with that here are my goals for the next 30 days:
 
-* To write for at least 30 minutes per day
-* To have at least 10 posts published in April
+* To write for _at least_ 30 minutes per day
+* To have _at least_ 10 posts published in April
 
-Obviously these are my targets, I reality I know that I can be quite hard on myself so will inevitably want to smash them.
+Obviously these are only targets, in reality I know that I can be quite hard on myself so will inevitably want to smash them.
 
 Lets go!

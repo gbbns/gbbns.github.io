@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The 30 day writing challenge"
-date:   2016-04-01 08:30:00
+date:   2016-04-01 07:00:00
 author: "Chris"
 categories: work personal motivation
 ---

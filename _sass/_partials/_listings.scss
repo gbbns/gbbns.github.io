@@ -3,10 +3,24 @@
  */
 
  .article__list {
-   margin-left: 0;
-   list-style: none;
- }
+  margin-left: 0;
+  list-style: none;
 
- .article__list-item {
- 		margin-bottom: remy($base-spacing-unit);
+    &--item {
+      border-bottom: $base-border-style--light;
+      margin-bottom: remy($base-spacing-unit);
+    }
+
+    &--heading {
+      font-size: remy($f-size-h2);
+      margin-bottom: remy($base-spacing-unit) / 2;
+    }
+
+    &--excerpt {
+
+    }
+
+    &--link {
+
+    }
  }

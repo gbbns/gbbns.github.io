@@ -2,8 +2,8 @@
  * Site header
  */
 .site__header {
-  border: 1px solid $grey-color-dark;
-  border-bottom: 1px solid $grey-color-light;
+  border: $base-border-style;
+  border-bottom: $base-border-style--light;
   padding: 20px 0;
   position: relative;
 

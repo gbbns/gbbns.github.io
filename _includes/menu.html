@@ -1,19 +1,26 @@
     <nav class="nav-primary__wrapper trigger" data-nav>
       {% assign pages = site.pages %}
       <ul class="nav-primary">
-        <li class="nav-primary__item">
+        <!-- <li class="nav-primary__item">
           <a class="nav-primary__link{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Home</a>
-        </li>
-        {% for p in pages %}
+        </li> -->
+        <!-- {% for p in pages %}
         {% if p.title != null %}
-          {% if p.layout == "page" %}
+          {% if p.layout == "page" || p.layout == "list" %}
           <li class="nav-primary__item">
             <a class="nav-primary__link{% if page.url == p.url %} active{% endif %}" href="{{ p.url }}">{{ p.title }}</a>
           </li>
           {% endif %}
 
           {% endif %}
-        {% endfor %}
+        {% endfor %} -->
+        {% for nav_item in site.nav.main %}
+        <li class="nav-primary__item">
+          <!-- <a class="nav-primary__link{% if page.url == p.url %} active{% endif %}" href="{{ p.url }}">{{ p.title }}</a> -->
+          <a href="{{ nav_item[1] }}" class="nav-primary__link{% if page.nav_item == nav_item[0] %} active{% endif %}">{{ nav_item[0] }}</a>
+
+        </li>
+        {%endfor%}
       </ul>
 
 

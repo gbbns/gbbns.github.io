@@ -49,6 +49,11 @@
 .post__meta {
 	font-size: $f-size-h2;
 	color: $grey-color;
+
+  &--mini {
+    font-size: $f-size-h5;
+    font-style: italic;
+  }
 }
 
 .post__link {

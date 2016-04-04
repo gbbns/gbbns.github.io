@@ -1,8 +1,8 @@
 // Main content container
 
 .content {
-  border-left: 1px solid $grey-color-dark;
-  border-right: 1px solid $grey-color-dark;
+  border-left: $base-border-style;
+  border-right: $base-border-style;
 
   .site__title {
     &--primary {

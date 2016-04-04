@@ -2,8 +2,8 @@
  * Site footer
  */
 .site-footer {
-  border: 1px solid $grey-color-dark;
-  border-top: 1px solid $grey-color-light;
+  border: $base-border-style;
+  border-top: $base-border-style--light;
   padding: $base-spacing-unit 0;
 
   .footer-heading {

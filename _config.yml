@@ -14,6 +14,13 @@ meta:
   title: "Freelance front end web developer -- Manchester - Lancashire -- Chris Gibbons"
   keywords: "Chris Gibbons, chris gibbons, gbbns, blackpool, lancashire,england, uk, united kingdom, html, css, xhtml, web standards, accessibility, javascript"
 
+# Internal nav
+nav:
+  main:
+    writing: "/writing"
+    projects: "/projects"
+    now: "/now"
+
 sass:
   sass_dir: _sass
   style: compact

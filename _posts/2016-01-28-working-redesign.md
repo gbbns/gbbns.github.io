@@ -8,7 +8,7 @@ I've never _truly_ been happy with my site, it's always been in a state of redes
 
 After installing [Jekyll](http://jekyllrb.com/) early last year I finally felt that I had the beginnings of something I was beginning to like and _actually_ enjoy using.
 
-[Fast forward a year](2016/01/25/what-a-year) and I find myself back at the beginning, albeit with a platform I'm _still_ happy with.
+[Fast forward a year](2016/02/04/what-a-year) and I find myself back at the beginning, albeit with a platform I'm _still_ happy with.
 
 And so begins a new re-design/re-align.
 

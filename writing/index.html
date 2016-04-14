@@ -5,13 +5,23 @@ published: true
 ---
 {% for post in site.posts %}
 <article class="article__list--item clearfix">
-  <header class="col col--1/4--md">
-    <h2 class="article__list--header">
+  <header class="col col--1/4--md article__list--header">
+    <h2 class="article__list--heading">
       <a href="{{ post.url}}" class="article__list--link">{{ post.title }}</a>
     </h2>
-    <span class="post__meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+    {% assign d = post.date | date: "%-d" %}
+    <span class="post__meta post__meta--datetime">
+      <!-- <i class="fa fa-calendar"></i> -->
+      <time datetime="{{ post.date | date:"%Y-%m-%d" }}">
+        {{ post.date | date: "%B" }}
+        {% case d %}{% when "1" or "21" or "31" %}{{ d }}st{% when "2" or "22" %}{{ d }}nd{% when "3" or "23" %}{{ d }}rd{% else %}{{ d }}th{% endcase %},
+        {{ post.date | date: "%Y" }}
+      </time>
+    </span>
+
   </header>
-  <div class="col col--3/4--md article__list--except">
+  <div class="col col--3/4--md article__list--excerpt">
     <p>
       {{ post.content | strip_html | truncatewords:50}}
       <a class="continue-reading" href="{{ post.url}}">Continue reading >></a>

@@ -8,16 +8,33 @@
 
     &--item {
       border-bottom: $base-border-style--light;
-      margin-bottom: remy($base-spacing-unit);
+      margin-bottom: remy($base-spacing-unit / 1.5);
+      padding-bottom: remy($base-spacing-unit / 1.5);
+
+      @include respond-min($bp-md) {
+        margin-bottom: $base-spacing-unit;
+        padding-bottom: $base-spacing-unit;
+      }
     }
 
     &--heading {
       font-size: remy($f-size-h2);
-      margin-bottom: remy($base-spacing-unit) / 2;
+      margin-bottom: remy($base-spacing-unit / 2);
+      @include respond-min($bp-md) {
+        margin-bottom: 0;
+      }
+    }
+
+    &--header {
+     @include respond-max($bp-md) {
+       padding-left: 0;
+     }
     }
 
     &--excerpt {
-
+      @include respond-max($bp-md) {
+        padding-left: 0;
+      }
     }
 
     &--link {

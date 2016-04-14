@@ -2,7 +2,11 @@
  * Posts
  */
 .post__header {
-  margin-bottom: ($base-spacing-unit * 2);
+  margin-bottom: ($base-spacing-unit / 2);
+  @include respond-min($bp-md) {
+    margin-bottom: ($base-spacing-unit * 2);
+  }
+
   text-align: center;
 }
 
@@ -17,8 +21,12 @@
 }
 
 .post__content {
-  width: 70%;
   margin: 0 auto $base-spacing-unit;
+  width: 100%;
+
+  @include respond-min($bp-md) {
+    width:70%;
+  }
 
 	.site__title--secondary {
 		margin-bottom:6px;
@@ -27,12 +35,19 @@
       font-size: remy($f-size-h2);
 		}
 	}
-  p {
 
+  p {
     &:first-child {
       font-size: remy(20px);
       margin-bottom: 30px;
       line-height: 1.5;
+    }
+  }
+
+  h2 {
+    margin: $base-spacing-unit 0 ($base-spacing-unit / 3);
+    @include respond-min($bp-md) {
+      margin-bottom: $base-spacing-unit;
     }
   }
 
@@ -47,12 +62,23 @@
 }
 
 .post__meta {
-	font-size: $f-size-h2;
+	font-size: remy($f-size-h5);
 	color: $grey-color;
+
+  @include respond-min($bp-md) {
+    font-size: remy($f-size-h4);
+  }
 
   &--mini {
     font-size: $f-size-h5;
     font-style: italic;
+  }
+
+  &--time {
+    display: block;
+    @include respond-min($bp-md) {
+      display: inline;
+    }
   }
 }
 

@@ -10,8 +10,8 @@ Life is hectic. To help distill things, these are what I am currently focussing 
 
 * _Trying_ to improve my photography - [500px](https://www.500px.com/jibubo/) &amp; [Instagram](https://www.instagram.com/jibubo/).
 * Taking part in [GoodRead](https://www.goodreads.com/user_challenges/4380722)'s reading challenge.
+* Participating in [Marc Jenkins’ 30 day writing challenge](https://marcjenkins.co.uk/the-30-day-writing-challenge/).
 * Making an effort to attend more great local industry related events such as [McrFred](http://www.meetup.com/McrFRED/), [NUX](http://nuxuk.org/) and [UX&D](http://www.meetup.com/McrUXD/).
-* Learning new technologies - React/TDD/ES2015.
 
 This page is inspired by [Derik Sivers now page](https://sivers.org/nowff), via [Marc Jenkins now page](https://marcjenkins.co.uk/now/), amongst others.
 

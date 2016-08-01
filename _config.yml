@@ -6,13 +6,24 @@ main:
   description: Chris Gibbons // Front End Web Developer from Lancashire, UK.
   author: Chris Gibbons
 
-baseurl: / # the subpath of your site, e.g. /blog/
+baseurl:  # the subpath of your site, e.g. /blog/
 url: "http://www.chrisgibbons.co.uk" # the base hostname & protocol for your site
 
 meta:
-  description: "Chris Gibbons a senior front end, UX developer based in Blackpool, Lancashire &amp; Manchester, UK. I build flexible responsive websites for the all users of the web!"
-  title: "Freelance front end web developer -- Manchester - Lancashire -- Chris Gibbons"
-  keywords: "Chris Gibbons, chris gibbons, gbbns, blackpool, lancashire,england, uk, united kingdom, html, css, xhtml, web standards, accessibility, javascript"
+  description: "Chris is a senior front end, UX developer based in Blackpool, Lancashire &amp; Manchester, UK. He build's flexible responsive websites for the all users of the web and bakes a smashing cake."
+  title: "Chris Gibbons // Friendly front end web developer based in Manchester in the North West of England"
+  keywords: "Chris Gibbons, chris, gibbons, gbbns, blackpool, lancashire,england, uk, united kingdom, html, css, xhtml, web standards, accessibility, javascript"
+
+# # SEO
+# title: Chris Gibbons // Friendly front end web developer based in Manchester in the North West of England
+# description: Chris is senior front end, UX developer based in Blackpool, Lancashire &amp; Manchester, UK. He build's flexible responsive websites for the all users of the web and bakes a smashing cake.
+# keywords: "Chris Gibbons, chris gibbons, gbbns, blackpool, lancashire,england, uk, united kingdom, html, css, xhtml, web standards, accessibility, javascript"
+# author: Chris Gibbons
+#
+# twitter:
+#   username: jibubo
+#   domain: http://www.chrisgibbons.co.uk
+#   title: Chris Gibbons // Friendly front end web developer based in Manchester in the North West of England
 
 # Internal nav
 nav:
@@ -39,3 +50,11 @@ social-link:
 markdown: kramdown
 
 permalink: /:year/:month/:day/:title
+
+gems:
+  - jekyll-seo-tag
+  - jekyll-archives
+  - jekyll/tagging
+  - jekyll-tagging-related_posts
+  - jekyll-assets
+  - jekyll-sitemap

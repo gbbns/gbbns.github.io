@@ -1,11 +1,30 @@
   <head>
+    <meta charset="utf-8">
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.main.author }}</title>
 
     <!-- General Meta tags -->
-    <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, user-scalable=yes, initial-scale=1">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+    <link rel="alternate" href="/atom.xml" title="{{ site.title }}" type="application/atom+xml" hreflang="en-gb">
+
+    <script type="application/ld+json" async>
+      {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "name": "{{ site.main.author }}",
+        "url": "{{ site.url }}",
+        "image" : "{{ site.url }}/images/profile/chris-gibbons.jpg",
+        "sameAs" : [
+          "https://twitter.com/{{ site.social-link.twitter }}",
+          "http://uk.linkedin.com/in/{{ site.social-link.linkedin }}",
+          "https://github.com/{{ site.social-link.github }}"
+        ]
+      }
+    </script>
 
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.meta.description }}{% endif %}">
     <meta name="keywords" content="{{ site.meta.keywords }}" />
@@ -16,21 +35,24 @@
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
-    <!-- Twitter & Open Gragh -->
+    <meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.main.author }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ site.url }}">
+    <meta property="og:image" content="{{ site.url }}/images/profile/chris-gibbons.jpg">
+    <meta property="og:description" content="{{ site.main.author }} &mdash; {{ site.meta.description }}">
+    <meta property="og:locale" content="en_GB">
+    <meta property="article:author" content="{{ site.main.author }}">
+    <meta property="og:site_name" content="{{ site.main.author }} &mdash; {{ site.meta.description }}">
+
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@{{ site.social-link.twitter }}">
-    <meta name="twitter:domain" property="og:url" content="www.chrisgibbons.co.uk">
-    <meta name="twitter:creator" content="@{{ site.social-link.twitter }}">
-    <meta name="twitter:title" property="og:title" content="Front end, coffee &amp; cakes">
-    <!--<meta name="twitter:image:src" property="og:image" content="/eventual/path/to/logo">-->
-    <meta name="twitter:description" property="og:description" content="{{ site.meta.description }}">
-    <meta property="og:site_name" content="{{ site.main.author }}">
-
+    <meta name="twitter:site" content="{{ site.social-link.twitter }}">
+    <meta name="twitter:creator" content="{{ site.social-link.twitter }}">
+    <meta name="twitter:url" content="{{ site.url }}">
+    <meta name="twitter:domain" content="{{ site.url }}">
+    <meta name="twitter:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.main.author }}">
+    <meta name="twitter:description" content="{{ site.main.author }} &mdash; {{ site.meta.description }}">
+    <meta name="twitter:image" content="{{ site.url }}/images/profile/chris-gibbons.jpg">
     <link rel="stylesheet" href="{{ "css/main.css" | prepend: site.baseurl }}">
-
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
-    <link rel="alternate" href="/atom.xml" title="{{ site.title }}" type="application/atom+xml">
-    <link rel="sitemap" href="/sitemap.xml" title="Sitemap" type="application/xml">
 
     <!-- Webfont loading code from Google -->
     <script type="text/javascript">

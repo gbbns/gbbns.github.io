@@ -1,9 +1,9 @@
+html {
+  font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+}
+
 body {
   background-color: $grey-color-light;
-
-  @include respond-min($bp-md){
-    border: 60px solid $grey-color-light;
-  }
 }
 
 * {

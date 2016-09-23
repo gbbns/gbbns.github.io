@@ -444,7 +444,6 @@ dl, dd, ol, ul, figure {
  */
 body {
   font-size: $f-size-body;
-  font-family:$f-default;
   font-weight: 400;
   color: $c-text--primary;
   -webkit-text-size-adjust: 100%;
@@ -464,7 +463,6 @@ ul, ol, dl, figure,
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
-  font-family:  $f-title;
   color: $c-text--primary;
   margin:0px 0 20px -2px;
   text-rendering: optimizeLegibility;

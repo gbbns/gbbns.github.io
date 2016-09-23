@@ -1,7 +1,6 @@
 .site__navigation {
 
   @include respond-min($bp-md-lg) {
-    float: right;
     position: relative;
   }
 
@@ -161,7 +160,7 @@
     @include respond-min($bp-md) {
       display: inline-block;
     }
-    
+
     @include respond-min-max($bp-md, $bp-md-lg) {
       margin-right: 10px;
 
@@ -177,7 +176,6 @@
 
   .nav-primary__link {
     display: block;
-    font-family: $f-title;
     text-transform: uppercase;
     font-size: remy($f-size-nav);
   }

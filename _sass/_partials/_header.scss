@@ -57,7 +57,8 @@
 
   .site-meta-title {
     font-size: remy(24px);
-
+    font-weight: 900;
+    
     @include respond-min($bp-md) {
       font-size: inherit;
     }

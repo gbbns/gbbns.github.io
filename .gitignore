@@ -22,3 +22,4 @@ Thumbs.db
 
 # Ingore Jekyll generated #
 /_site/
+/node_modules/

@@ -39,3 +39,5 @@ social-link:
 markdown: kramdown
 
 permalink: /:year/:month/:day/:title
+
+exclude: [/node_modules/, package.json, gulpfile.js]

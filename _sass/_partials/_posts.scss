@@ -40,11 +40,14 @@
     &:first-child {
       font-size: remy(20px);
       margin-bottom: 30px;
-      line-height: 1.5;
+      line-height: 1.2;
+      font-weight: 600;
     }
   }
 
   h2 {
+    font-weight: 700;
+    line-height: 1.1;
     margin: $base-spacing-unit 0 ($base-spacing-unit / 3);
     @include respond-min($bp-md) {
       margin-bottom: $base-spacing-unit;
@@ -85,10 +88,14 @@
 .post__link {
 	display: block;
 	font-size: remy($f-size-h2);
+  font-weight: 700;
+  line-height: 1;
 }
 
 .post__date {
-	font-size:remy($f-size-body);
+	font-size:remy(13px);
+  line-height: 1;
+  margin-top: remy(4px);
 }
 
 .post__wrapper {
@@ -96,7 +103,7 @@
     &:first-child {
       &:first-letter {
         float: left;
-        font-size: remy(70px);
+        font-size: remy(110px);
         line-height: remy(70px);
         padding: 0px 6px 0px 0px;
         margin-bottom: -12px;

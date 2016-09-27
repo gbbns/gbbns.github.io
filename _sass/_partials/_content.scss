@@ -17,7 +17,7 @@
       font-size : remy($f-size-h2);
     }
   }
-  
+
   &__main {
     margin-bottom : 14px;
   }
@@ -26,7 +26,7 @@
     &--title {
       margin-bottom : 8px;
       font-size     : remy($f-size-h2);
-      font-weight   : bold;
+      font-weight   : 900;
     }
   }
 }
@@ -44,6 +44,10 @@
   .post__list {
     margin-bottom : 22px;
 
+    li {
+      margin-bottom: 16px;
+    }
+    
     .post__header {
       text-align: left;
     }

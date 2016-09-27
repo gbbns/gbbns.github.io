@@ -9,7 +9,7 @@ categories: work personal motivation
 
 I'm not going to go into the full details, but twice in the space of 4 weeks I've been left having to deal with some kind of rejection.
 
-Now this isn't a post wanting pity, it's more to serve as a permanent reminder to me, personally, on how i've dealt with it, and also something which may help others.
+Now this isn't a post wanting pity, it's more to serve as a permanent reminder to me, personally, on how I've dealt with it, and also something which may help others.
 
 How people deal with things varies massively, some people can brush it aside easily and get on with things like nothing has happened, for others rejection can be a huge setback and something that they may take incredibly to heart -- me? Well I like to think that i'm closer to the former.
 

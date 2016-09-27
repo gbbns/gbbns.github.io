@@ -11,8 +11,8 @@
     // text-align: center;
   }
 
-  .site__title {
-    font-size: remy($f-size-title);
+  .content__title {
+    font-size: $f-size-title;
     @include font-weight(normal);
     line-height: 1.4;
     letter-spacing: -1px;
@@ -56,9 +56,9 @@
   }
 
   .site-meta-title {
-    font-size: remy(24px);
+    font-size: 24px;
     font-weight: 900;
-    
+
     @include respond-min($bp-md) {
       font-size: inherit;
     }

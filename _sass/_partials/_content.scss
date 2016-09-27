@@ -4,17 +4,17 @@
   border-left: $base-border-style;
   border-right: $base-border-style;
 
-  .site__title {
+  .content__title {
     &--primary {
-      @include    respond-min($bp-md);
-      font-size : remy($f-size-h1-mobile);
+      @include respond-min($bp-md);
+      font-size : $f-size-h1-mobile;
 
       @include respond-min($bp-md){
-        font-size: remy($f-size-max);
+        font-size: $f-size-max;
       }
     }
     &--secondary {
-      font-size : remy($f-size-h2);
+      font-size : $f-size-h2;
     }
   }
 
@@ -25,7 +25,7 @@
   &__aside {
     &--title {
       margin-bottom : 8px;
-      font-size     : remy($f-size-h2);
+      font-size     : $f-size-h2;
       font-weight   : 900;
     }
   }
@@ -39,7 +39,7 @@
 .page__content {
   padding : $base-spacing-unit;
   .page__heading {
-    font-size : remy($f-size-h1);
+    font-size : $f-size-h1;
   }
   .post__list {
     margin-bottom : 22px;
@@ -47,11 +47,11 @@
     li {
       margin-bottom: 16px;
     }
-    
+
     .post__header {
       text-align: left;
     }
-    .site__title--primary {
+    .content__title--primary {
       margin-bottom : 6px;
     }
   }

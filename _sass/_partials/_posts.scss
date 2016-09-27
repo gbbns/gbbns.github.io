@@ -11,12 +11,12 @@
 }
 
 .post__title {
-	font-size: remy($f-size-max);
+	font-size: $f-size-max;
 	letter-spacing: -1px;
 	line-height: 1;
 
   @include respond-min($bp-md) {
-	  font-size: remy($f-size-h1);
+	  font-size: $f-size-h1;
 	}
 }
 
@@ -28,17 +28,17 @@
     width:70%;
   }
 
-	.site__title--secondary {
+	.content__title--secondary {
 		margin-bottom:6px;
 
     @include respond-min($bp-md) {
-      font-size: remy($f-size-h2);
+      font-size: $f-size-h2;
 		}
 	}
 
   p {
     &:first-child {
-      font-size: remy(20px);
+      font-size: 20px;
       margin-bottom: 30px;
       line-height: 1.2;
       font-weight: 600;
@@ -46,8 +46,6 @@
   }
 
   h2 {
-    font-weight: 700;
-    line-height: 1.1;
     margin: $base-spacing-unit 0 ($base-spacing-unit / 3);
     @include respond-min($bp-md) {
       margin-bottom: $base-spacing-unit;
@@ -55,21 +53,21 @@
   }
 
 	h3 {
-    font-size: remy($f-size-h3);
+    font-size: $f-size-h3;
 	}
 
 	h4 {
-    font-size: remy($f-size-h4);
+    font-size: $f-size-h4;
 
 	}
 }
 
 .post__meta {
-	font-size: remy($f-size-h5);
+	font-size: $f-size-h5;
 	color: $grey-color;
 
   @include respond-min($bp-md) {
-    font-size: remy($f-size-h4);
+    font-size: $f-size-h4;
   }
 
   &--mini {
@@ -87,15 +85,15 @@
 
 .post__link {
 	display: block;
-	font-size: remy($f-size-h2);
+	font-size: $f-size-h2;
   font-weight: 700;
   line-height: 1;
 }
 
 .post__date {
-	font-size:remy(13px);
+	font-size:13px;
   line-height: 1;
-  margin-top: remy(4px);
+  margin-top: 4px;
 }
 
 .post__wrapper {
@@ -103,8 +101,8 @@
     &:first-child {
       &:first-letter {
         float: left;
-        font-size: remy(110px);
-        line-height: remy(70px);
+        font-size: 80px;
+        line-height: 70px;
         padding: 0px 6px 0px 0px;
         margin-bottom: -12px;
       }

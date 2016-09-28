@@ -36,6 +36,7 @@ gulp.task('css', () => {
     .pipe(concat('main.css'))
     .pipe(postcss(processors))
     .pipe(cleanCSS())
+    .pipe(gulp.dest('css/'))
     .pipe(gulp.dest('_site/css/'));
 });
 

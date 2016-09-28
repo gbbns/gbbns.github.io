@@ -2,25 +2,51 @@ const child = require('child_process');
 const browserSync = require('browser-sync').create();
 
 const gulp = require('gulp');
-const concat = require('gulp-concat');
+const concat = require('gulp-concat-css');
 const gutil = require('gulp-util');
 const sass = require('gulp-sass');
 
 const siteRoot = '_site';
-const cssFiles = '_css/**/*.?(s)css';
+const cssFiles = './_sass/**/*.scss';
+
+const cleanCSS = require('gulp-clean-css');
+const postcss = require('gulp-postcss');
+const autoprefixer = require('autoprefixer');
+const pxtorem = require('postcss-pxtorem');
+
+const runSequence = require('run-sequence');
+
 
 gulp.task('css', () => {
-  gulp.src(cssFiles)
-    .pipe(sass())
-    .pipe(concat('all.css'))
-    .pipe(gulp.dest('assets'));
+
+  var processors = [
+      autoprefixer({
+          browsers: 'last 2 version'
+      }),
+      pxtorem({
+        replace: false,
+        rootValue: 16,
+        unitPrecision: 5,
+        propWhiteList: ['font', 'font-size', 'line-height', 'letter-spacing']
+      })
+  ];
+
+  return gulp.src('css/main.scss')
+    .pipe(sass({outputStyle: 'compact'}).on('error', sass.logError))
+    .pipe(concat('main.css'))
+    .pipe(postcss(processors))
+    .pipe(cleanCSS())
+    .pipe(gulp.dest('_site/css/'));
 });
+
 
 gulp.task('jekyll', () => {
   const jekyll = child.spawn('jekyll', ['build',
     '--watch',
     '--incremental',
-    '--drafts'
+    '--drafts',
+    '--config',
+    '_config.yml'
   ]);
 
   const jekyllLogger = (buffer) => {
@@ -45,4 +71,10 @@ gulp.task('serve', () => {
   gulp.watch(cssFiles, ['css']);
 });
 
-gulp.task('default', ['css', 'jekyll', 'serve']);
+gulp.task('default', function(callback) {
+  runSequence(
+    'jekyll',
+    ['css'],
+    'serve',
+    callback);
+});

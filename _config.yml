@@ -21,10 +21,6 @@ nav:
     projects: "/projects"
     now: "/now"
 
-sass:
-  sass_dir: _sass
-  style: compact
-
 social-link:
   twitter: jibubo
   github:  gbbns
@@ -40,4 +36,11 @@ markdown: kramdown
 
 permalink: /:year/:month/:day/:title
 
-exclude: [/node_modules/, package.json, gulpfile.js]
+exclude:
+  - node_modules/
+  - package.json
+  - gulpfile.js
+  - css/
+
+keep_files:
+  - css/main.css

@@ -1,0 +1,24 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+// Import partials from default sass dir
+
+@import "styles"
+//
+// @import "../_sass/_settings/settings.variables",
+//         "../_sass/_settings/settings.global",
+//         "../_sass/_tools/tools.font-awesome",
+//         "../_sass/_tools/tools.mixins",
+//         "../_sass/_tools/tools.functions",
+//         "../_sass/_tools/tools.grid",
+//         "../_sass/_tools/tools.typography",
+//         "../_sass/_tools/tools.syntax-highlighting",
+//         "../_sass/base",
+//         "../_sass/_components/component.navigation-primary",
+//         "../_sass/_partials/layout",
+//         "../_sass/_partials/global",
+//         "../_sass/_partials/header",
+//         "../_sass/_partials/footer",
+//         "../_sass/_partials/content",
+//         "../_sass/_partials/listings",
+//         "../_sass/_partials/posts";

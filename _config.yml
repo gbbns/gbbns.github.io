@@ -20,7 +20,11 @@ nav:
     writing: "/writing"
     projects: "/projects"
     now: "/now"
-    # about: "/about"
+    about: "/about"
+
+sass:
+  sass_dir: _sass
+  style: compact
 
 social-link:
   twitter: jibubo

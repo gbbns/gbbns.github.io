@@ -181,7 +181,7 @@
     font-weight: 900;
     padding: 10px 0;
 
-    @include respond-min($bp-lg) {
+    @include respond-min($bp-md) {
       font-size: $f-size-nav;
     }
 

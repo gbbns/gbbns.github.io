@@ -1,8 +1,8 @@
 // Main content container
 
 .content {
-  border-left: $base-border-style;
-  border-right: $base-border-style;
+  // border-left: $base-border-style;
+  // border-right: $base-border-style;
 
   .content__title {
     &--primary {
@@ -10,7 +10,7 @@
       font-size : $f-size-h1-mobile;
 
       @include respond-min($bp-md){
-        font-size: $f-size-max;
+        font-size: $f-size-h1;
       }
     }
     &--secondary {

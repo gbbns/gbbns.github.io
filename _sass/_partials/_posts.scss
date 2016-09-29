@@ -88,9 +88,23 @@
 	font-size: $f-size-h2;
   font-weight: 700;
   line-height: 1;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e4e4e4;
+  color: $c-text--primary;
+}
+
+.post__excerpt {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.post__header {
+  margin-bottom: 4px;
 }
 
 .post__date {
+  color: $c-text--primary;
 	font-size:13px;
   line-height: 1;
   margin-top: 4px;

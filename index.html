@@ -5,19 +5,22 @@ title: Welcome to the personal musings of Chris Gibbons
 
 <section class="grid home">
   <article class="col content__main clearfix">
-    <h1 class="content__title--primary">Welcome to the personal musings of Chris Gibbons</h1>
-    <p>Listed here are a loose collection of various thoughts and observations, some web related, some not. Hopefully you will find the content useful, if you do, please leave a comment.</p>
-    <h2 class="content__title--secondary">Latest articles</h2>
     <ul class="post__list">
       {% for post in site.posts limit:8 %}
         <li>
-          <a class="post__link" href="{{ post.url }}">{{ post.title }}</a>
-          <div class="post__date">
-            {% assign d = post.date | date: "%-d" %}
-            {{ post.date | date: "%b" }}
-            {% case d %}{% when "1" or "21" or "31" %}{{ d }}st{% when "2" or "22" %}{{ d }}nd{% when "3" or "23" %}{{ d }}rd{% else %}{{ d }}th{% endcase %},
-            {{ post.date | date: "%Y" }}
-          </div>
+          <a class="post__link" href="{{ post.url }}">
+            <h2 class="content__title--secondary post__header">{{ post.title }}</h2>
+            <p class="post__excerpt">
+              {{ post.content | strip_html | truncatewords:30}}
+              <!-- <a class="continue-reading" href="{{ post.url}}">Continue reading >></a> -->
+            </p>
+            <div class="post__date">
+              {% assign d = post.date | date: "%-d" %}
+              {{ post.date | date: "%b" }}
+              {% case d %}{% when "1" or "21" or "31" %}{{ d }}st{% when "2" or "22" %}{{ d }}nd{% when "3" or "23" %}{{ d }}rd{% else %}{{ d }}th{% endcase %},
+              {{ post.date | date: "%Y" }}
+            </div>
+          </a>
         </li>
       {% endfor %}
     </ul>

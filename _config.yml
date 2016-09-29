@@ -20,6 +20,7 @@ nav:
     writing: "/writing"
     projects: "/projects"
     now: "/now"
+    # about: "/about"
 
 social-link:
   twitter: jibubo
@@ -36,11 +37,6 @@ markdown: kramdown
 
 permalink: /:year/:month/:day/:title
 
-exclude:
-  - node_modules/
-  - package.json
-  - gulpfile.js
-  - css/
+exclude: [node_modules, package.json, gulpfile.js, _assets]
 
-keep_files:
-  - css/main.css
+keep_files: [_assets]

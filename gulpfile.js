@@ -16,7 +16,6 @@ const pxtorem = require('postcss-pxtorem');
 
 const runSequence = require('run-sequence');
 
-
 gulp.task('css', () => {
 
   var processors = [
@@ -31,21 +30,24 @@ gulp.task('css', () => {
       })
   ];
 
-  return gulp.src('css/main.scss')
-    .pipe(sass({outputStyle: 'compact'}).on('error', sass.logError))
+  return gulp.src('./_assets/css/main.scss')
+    .pipe(sass({
+      outputStyle: 'compact',
+      trace: true
+    }).on('error', sass.logError))
     .pipe(concat('main.css'))
     .pipe(postcss(processors))
     .pipe(cleanCSS())
-    .pipe(gulp.dest('css/'))
-    .pipe(gulp.dest('_site/css/'));
+    .pipe(gulp.dest('_assets/css/'))
+    .pipe(gulp.dest('_site/_assets/css/'))
+    .pipe(browserSync.stream())
+    .on('error', gutil.log);
 });
-
 
 gulp.task('jekyll', () => {
   const jekyll = child.spawn('jekyll', ['build',
     '--watch',
-    '--incremental',
-    '--drafts',
+    // '--drafts',
     '--config',
     '_config.yml'
   ]);
@@ -61,13 +63,24 @@ gulp.task('jekyll', () => {
 });
 
 gulp.task('serve', () => {
+  // browserSync.init({
+  //   files: [siteRoot + '/**'],
+  //   port: 4000,
+  //   server: {
+  //     baseDir: siteRoot
+  //   }
+  // });
+
   browserSync.init({
-    files: [siteRoot + '/**'],
-    port: 4000,
-    server: {
-      baseDir: siteRoot
-    }
-  });
+      server: siteRoot,
+      port: 4000,
+      ghostMode: false, // do not mirror clicks, reloads, etc. (performance)
+      logFileChanges: true,
+      logLevel: 'debug',
+      open: false       // do not open the browser
+    });
+
+
 
   gulp.watch(cssFiles, ['css']);
 });

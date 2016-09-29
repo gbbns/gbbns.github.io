@@ -13,7 +13,7 @@ So, why now? Simple really, I'm now at the total opposite stage.
 
 2013 was a pretty crappy year, and to be honest so was most of 2014 -- for a number of different reasons -- and to top if off I really hit an all time low with 'the internet', to the point where I was ready to completely jack it all in and change career.
 
-I don't know when, exactly, or what, triggered this. Looking back it was probably a number of things which all came together to hit me hard.
+I don't know when exactly, or what, triggered this. Looking back it was probably a number of things which all came together to hit me hard.
 
 The 'eureka' moment came when I attended [DDD North](http://www.dddnorth.co.uk/) one of the sessions [Burnout Is Real And It's Coming To Get You](http://www.dddnorth.co.uk/Sessions/Details/125) struck a chord and really resonated with some of the issues I'd been facing.
 

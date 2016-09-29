@@ -37,6 +37,6 @@ markdown: kramdown
 
 permalink: /:year/:month/:day/:title
 
-exclude: [node_modules, package.json, gulpfile.js, _assets]
-
-keep_files: [_assets]
+# exclude: [node_modules, package.json, gulpfile.js, _assets]
+#
+# keep_files: [_assets]

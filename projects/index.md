@@ -4,7 +4,6 @@ title: Work
 permalink: /projects/
 menu: main
 ---
-
 My last project whilst at Code was FE lead on the platform team responsible for pushing some new parts of a responsive site live, this can be seen over at [Hillarys Carpets](http://www.hillarys.co.uk/carpets) and [Hillarys - Book an Appointment](http://www.hillarys.co.uk/book-an-appointment)
 
 Rather than a full re-platform, we decided to tackle it section by section and transition over a period of 9-12 months. We used some React (with Babel + WebPack) along with the usual suspects of Gulp/Sass et al.

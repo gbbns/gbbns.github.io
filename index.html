@@ -4,14 +4,12 @@ title: Welcome to the personal musings of Chris Gibbons
 ---
 
 <section class="grid home">
-  <article class="col col--3/4--md content__main clearfix">
-    {% include about.html %}
-  </article>
-
-  <aside class="col col--1/4--md content__aside clearfix">
-    <h2 class="content__aside--title">Latest blog articles</h2>
+  <article class="col content__main clearfix">
+    <h1 class="content__title--primary">Welcome to the personal musings of Chris Gibbons</h1>
+    <p>Listed here are a loose collection of various thoughts and observations, some web related, some not. Hopefully you will find the content useful, if you do, please leave a comment.</p>
+    <h2 class="content__title--secondary">Latest articles</h2>
     <ul class="post__list">
-      {% for post in site.posts limit:3 %}
+      {% for post in site.posts limit:8 %}
         <li>
           <a class="post__link" href="{{ post.url }}">{{ post.title }}</a>
           <div class="post__date">
@@ -23,5 +21,6 @@ title: Welcome to the personal musings of Chris Gibbons
         </li>
       {% endfor %}
     </ul>
-  </aside>
+  </article>
+
 </section>
